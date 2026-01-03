@@ -1,6 +1,4 @@
 console.log("resources.js loaded");
-
-// ===== RESOURCE DATA STORED IN JS (works offline + TSA + file:// ) =====
 const resources = [
     {
         id: "resource-chester-county-food-bank",
@@ -158,7 +156,6 @@ const resources = [
     }
 ];
 
-// ===== DOM SETUP =====
 let resourceListElement;
 let resourceCountElement;
 let noResultsMessageElement;
@@ -166,7 +163,6 @@ let searchInputElement;
 let typeFilterElement;
 let locationFilterElement;
 
-// RENDER RESOURCE CARDS
 function renderResources(list) {
     resourceListElement.innerHTML = "";
 
@@ -216,7 +212,6 @@ function renderResources(list) {
     });
 }
 
-// FILTER LOGIC
 function applyFilters() {
     const searchText = searchInputElement.value.trim().toLowerCase();
     const selectedType = typeFilterElement.value;
@@ -251,7 +246,6 @@ function applyFilters() {
     renderResources(filtered);
 }
 
-// SCROLL TO HASH
 function handleHashScroll() {
     const hash = window.location.hash;
     if (!hash) return;
@@ -264,7 +258,6 @@ function handleHashScroll() {
     setTimeout(() => target.classList.remove("highlight-pulse"), 2000);
 }
 
-// INIT PAGE
 document.addEventListener("DOMContentLoaded", () => {
     resourceListElement = document.getElementById("resourceList");
     resourceCountElement = document.getElementById("resourceCount");
