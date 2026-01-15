@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Volunteer - Downingtown Link</title>
+    <title>Resource Hub | Downingtown Link</title>
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/resources.js" defer></script>
+
+    <script src="js/main.js" defer></script>
   </head>
+
   <body>
     <header class="site-header">
       <div class="logo">
@@ -21,29 +26,57 @@
           <button class="dropdown-toggle">Menu</button>
           <ul class="dropdown-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="resources.html">Resource Hub</a></li>
+            <li><a href="resources.html" class="active">Resource Hub</a></li>
             <li><a href="submit.html">Submit Resource</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
         </div>
       </nav>
     </header>
-
     <main>
-      <section class="volunteer-list">
-        <div class="container">
-          <h2>Volunteer Opportunities</h2>
-          <div id="volunteerList"></div>
+      <section class="page-hero">
+        <h1>Volunteering Opportunities</h1>
+        <p>
+          Find volunteer opportunities!
+        </p>
+      </section>
+
+      <section class="filters-bar">
+        <div class="filter-group">
+          <label for="searchInput">Search</label>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name, category, or keyword"
+          />
         </div>
+
+        <div class="filter-group">
+          <label for="locationFilter">Area</label>
+          <select id="locationFilter">
+            <option value="all">All Areas</option>
+            <option value="Downingtown">Downingtown</option>
+            <option value="Exton">Exton</option>
+            <option value="Chester Springs">Chester Springs</option>
+            <option value="Glenmoore">Glenmoore</option>
+            <option value="Romansville">Romansville</option>
+            <option value="Chester County">Chester County (County-wide)</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="resources-section">
+        <div id="resourceCount" class="resource-count"></div>
+        <div id="resourceList" class="card-grid resources-grid"></div>
+        <p id="noResultsMessage" class="no-results" hidden>
+          No resources match your search. Try clearing a filter or using a
+          different keyword.
+        </p>
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <p>© 2025 Downingtown Link</p>
-      </div>
+    <footer class="site-footer">
+      <p>© 2025 Downingtown Link</p>
     </footer>
-
-    <script src="js/volunteer.js"></script>
   </body>
 </html>
