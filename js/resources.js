@@ -7,7 +7,7 @@ let searchInputElement;
 let typeFilterElement;
 let locationFilterElement;
 async function loadResources() {
-  const response = await fetch('/data/resources.json');
+  const response = await fetch('../data/resources.json');
   resources = await response.json();
   renderResources(resources);
 }
