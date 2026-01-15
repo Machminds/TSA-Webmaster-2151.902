@@ -20,4 +20,24 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // Parallax effect for hero sections
+  const parallaxElements = document.querySelectorAll('.hero');
+  
+  function updateParallax() {
+    parallaxElements.forEach(element => {
+      const scrollPosition = window.scrollY;
+      const elementOffset = element.offsetTop;
+      const distance = scrollPosition - elementOffset;
+      
+      // Only apply parallax if element is in viewport
+      if (elementOffset < scrollPosition + window.innerHeight && element.offsetTop + element.offsetHeight > scrollPosition) {
+        const parallaxValue = distance * 0.5;
+        element.style.backgroundPosition = `center ${parallaxValue}px`;
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateParallax, false);
+  updateParallax();
 });
