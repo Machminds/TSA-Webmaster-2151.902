@@ -1,57 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>References | Downingtown Link</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/main.js" defer></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>References | Downingtown Link</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
 
-<body>
-<header class="site-header">
-  <div class="logo">
-    <img src="assets/logo.png" alt="Downingtown Link Logo" class="logo-img" />
-    <span class="logo-text">Downingtown Link</span>
-  </div>
-  <nav class="main-nav">
-    <a href="index.html">Home</a>
-    <a href="resources.html">Resource Hub</a>
-    <a href="submit.html">Submit Resource</a>
-    <a href="about.html">About</a>
-    <a href="references.html" class="active">References</a>
-  </nav>
-</header>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img
+          src="assets/logo.png"
+          alt="Downingtown Link Logo"
+          class="logo-img"
+        />
+        <span class="logo-text">Downingtown Link</span>
+      </div>
+      <nav class="main-nav">
+        <div class="dropdown">
+          <button class="dropdown-toggle">Menu</button>
+          <ul class="dropdown-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="resources.html">Resource Hub</a></li>
+            <li><a href="submit.html">Submit Resource</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<main>
-  <section class="page-hero">
-    <h1>References</h1>
-    <p>
-      This page contains the official references document used to verify
-      community resources and information presented on this website.
-    </p>
-  </section>
+    <main>
+      <section class="page-hero">
+        <h1>References</h1>
+        <a href="assets/pdf/worklog.pdf">Work Log</a>
+        <p></p>
+        <a href="assets/pdf/references.pdf">References</a>
+        <p></p>
+        <a href="assets/pdf/copyright_checklist.pdf">Copyright Checklist</a>
 
-  <section class="page-section">
-    <div class="form-card" style="max-width: 1100px;">
-      <p style="margin-bottom: 0.8rem;">
-        If the document does not display properly,
-        <a href="assets/pdf/12.pdf" target="_blank">open the PDF in a new tab</a>.
+        <p>
+          This page contains the official references document used to verify
+          community resources and information presented on this website.
+        </p>
+      </section>
+
+      <section class="page-section">
+        <div class="form-card" style="max-width: 1100px">
+          <p style="margin-bottom: 0.8rem">
+            If the document does not display properly,
+            <a href="assets/pdf/references.pdf" target="_blank"
+              >open the PDF in a new tab</a
+            >.
+          </p>
+
+          <iframe
+            src="assets/pdf/references.pdf"
+            width="100%"
+            height="750"
+            style="border: 1px solid #ddd; border-radius: 12px"
+            title="References PDF"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © 2025 Downingtown Link · Community Resource Hub created by students at
+        Downingtown STEM Academy.
       </p>
-
-      <iframe
-        src="assets/pdf/12.pdf"
-        width="100%"
-        height="750"
-        style="border: 1px solid #ddd; border-radius: 12px;"
-        title="References PDF"
-      ></iframe>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <p>© 2025 Downingtown Link · Community Resource Hub created by students at Downingtown STEM Academy.</p>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>
