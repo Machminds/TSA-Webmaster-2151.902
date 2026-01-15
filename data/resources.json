@@ -7,7 +7,12 @@
     "city": "Exton",
     "website": "https://chestercountyfoodbank.org/",
     "description": "County-wide hunger relief organization that supplies fresh produce and pantry staples to partner agencies and families and offers gardening and nutrition education programs.",
-    "tags": ["food", "pantry", "nutrition", "county-wide"]
+    "tags": [
+      "food",
+      "pantry",
+      "nutrition",
+      "county-wide"
+    ]
   },
   {
     "id": "resource-lords-pantry",
@@ -17,7 +22,11 @@
     "city": "Downingtown",
     "website": "https://www.lordspantryofdowningtown.org/",
     "description": "Local pantry in Downingtown providing groceries, household items, fresh produce, and seasonal meal kits to households in need.",
-    "tags": ["food", "pantry", "groceries"]
+    "tags": [
+      "food",
+      "pantry",
+      "groceries"
+    ]
   },
   {
     "id": "resource-dasd-food-programs",
@@ -27,7 +36,11 @@
     "city": "Downingtown",
     "website": "https://www.dasd.org/",
     "description": "School-based food support that includes free and reduced-price lunch, weekend food bags, and summer meal distribution sites for eligible students.",
-    "tags": ["students", "school", "food"]
+    "tags": [
+      "students",
+      "school",
+      "food"
+    ]
   },
   {
     "id": "resource-bvaa",
@@ -37,7 +50,12 @@
     "city": "Downingtown",
     "website": "https://bvactiveaging.org/",
     "description": "Senior centers that offer daily lunches, social activities, transportation support, and wellness classes for older adults in the region.",
-    "tags": ["seniors", "meals", "transportation", "wellness"]
+    "tags": [
+      "seniors",
+      "meals",
+      "transportation",
+      "wellness"
+    ]
   },
   {
     "id": "resource-ymca-downingtown",
@@ -47,7 +65,12 @@
     "city": "Downingtown",
     "website": "https://ymcagbw.org/locations/brandywine-ymca",
     "description": "Offers fitness classes, swim safety programs, youth sports, after-school activities, and chronic disease management classes for families.",
-    "tags": ["youth", "fitness", "family", "wellness"]
+    "tags": [
+      "youth",
+      "fitness",
+      "family",
+      "wellness"
+    ]
   },
   {
     "id": "resource-chester-county-health-dept",
@@ -57,7 +80,11 @@
     "city": "Chester County",
     "website": "https://www.chesco.org/health",
     "description": "Provides immunizations, maternal and child health programs, WIC nutrition services, and community education on disease prevention and healthy living.",
-    "tags": ["health", "public health", "immunizations"]
+    "tags": [
+      "health",
+      "public health",
+      "immunizations"
+    ]
   },
   {
     "id": "resource-safe-harbor",
@@ -67,7 +94,11 @@
     "city": "Chester County",
     "website": "https://safeharborofcc.org/",
     "description": "Non-profit organization that provides emergency shelter, meals, and supportive services for individuals experiencing homelessness, based in West Chester and serving the county.",
-    "tags": ["housing", "shelter", "homelessness"]
+    "tags": [
+      "housing",
+      "shelter",
+      "homelessness"
+    ]
   },
   {
     "id": "resource-nami-sepa",
@@ -77,7 +108,11 @@
     "city": "Chester County",
     "website": "https://namimainlinepa.org/",
     "description": "Provides peer support groups, education classes, and advocacy for individuals and families affected by mental health conditions throughout the region.",
-    "tags": ["mental health", "support", "families"]
+    "tags": [
+      "mental health",
+      "support",
+      "families"
+    ]
   },
   {
     "id": "resource-volunteerchesco",
@@ -87,7 +122,11 @@
     "city": "Chester County",
     "website": "https://www.chesco.org/",
     "description": "Chester County government volunteer hub listing opportunities such as food distributions, park and stream clean-ups, and community events.",
-    "tags": ["volunteer", "community", "service"]
+    "tags": [
+      "volunteer",
+      "community",
+      "service"
+    ]
   },
   {
     "id": "resource-techgirlz",
@@ -97,7 +136,12 @@
     "city": "Chester Springs",
     "website": "https://www.techgirlz.org/",
     "description": "Free technology workshops and hands-on activities that introduce middle school girls to coding, game design, robotics, and other STEM topics.",
-    "tags": ["STEM", "girls", "technology", "workshops"]
+    "tags": [
+      "STEM",
+      "girls",
+      "technology",
+      "workshops"
+    ]
   },
   {
     "id": "resource-darc",
@@ -107,7 +151,12 @@
     "city": "Downingtown",
     "website": "https://www.darcinfo.com/",
     "description": "Offers recreation programs, summer camps, sports leagues, arts classes, and community events for youth and adults in the Downingtown area.",
-    "tags": ["sports", "camps", "recreation", "youth"]
+    "tags": [
+      "sports",
+      "camps",
+      "recreation",
+      "youth"
+    ]
   },
   {
     "id": "resource-library-downingtown",
@@ -117,7 +166,11 @@
     "city": "Downingtown",
     "website": "https://downingtownlibrary.org/",
     "description": "Provides books, digital resources, computer and Wi-Fi access, homework help, and educational programs for children, teens, and adults.",
-    "tags": ["library", "internet", "education"]
+    "tags": [
+      "library",
+      "internet",
+      "education"
+    ]
   },
   {
     "id": "resource-glenmoore-food-support",
@@ -127,7 +180,11 @@
     "city": "Glenmoore",
     "website": "",
     "description": "Smaller church-based pantries and food support programs that serve families living in and around Glenmoore and Wallace Township.",
-    "tags": ["food", "church", "glenmoore"]
+    "tags": [
+      "food",
+      "church",
+      "glenmoore"
+    ]
   },
   {
     "id": "resource-romansville-community-programs",
@@ -137,6 +194,54 @@
     "city": "Romansville",
     "website": "",
     "description": "Local community and neighborhood groups that organize seasonal events, family gatherings, and informal support networks for residents.",
-    "tags": ["community", "family", "events"]
+    "tags": [
+      "community",
+      "family",
+      "events"
+    ]
+  },
+  {
+    "id": "resource-downingtown-youth-initiative",
+    "name": "Downingtown Youth Initiative",
+    "type": "Non-Profit",
+    "category": "Youth Development",
+    "city": "Downingtown",
+    "website": "https://downingtownyouthinitiative.org/",
+    "description": "Provides mentorship, leadership programs, and positive after-school opportunities for middle and high school students in the Downingtown area.",
+    "tags": [
+      "youth",
+      "mentorship",
+      "after-school"
+    ]
+  },
+  {
+    "id": "resource-brandywine-river-museum",
+    "name": "Brandywine River Museum of Art",
+    "type": "Cultural Center",
+    "category": "Arts & Education",
+    "city": "Chadds Ford",
+    "website": "https://www.brandywine.org/museum",
+    "description": "Regional art museum offering family programs, art workshops, walking trails, and educational events focused on American illustration and art.",
+    "tags": [
+      "arts",
+      "museum",
+      "family",
+      "education"
+    ]
+  },
+  {
+    "id": "resource-marsh-creek-state-park",
+    "name": "Marsh Creek State Park",
+    "type": "Recreation Area",
+    "category": "Outdoor Recreation",
+    "city": "Downingtown",
+    "website": "https://www.dcnr.pa.gov/StateParks/FindAPark/MarshCreekStatePark/",
+    "description": "State park featuring hiking trails, boating, fishing, swimming, picnic areas, and seasonal educational programs for families.",
+    "tags": [
+      "outdoors",
+      "hiking",
+      "family",
+      "fitness"
+    ]
   }
 ]
