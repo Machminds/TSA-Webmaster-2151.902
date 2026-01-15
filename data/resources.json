@@ -35,7 +35,7 @@
     "type": "Support Service",
     "category": "Senior Services",
     "city": "Downingtown",
-    "website": "https://www.bvaaging.org/",
+    "website": "https://www.bvactiveaging.org/ ",
     "description": "Senior centers that offer daily lunches, social activities, transportation support, and wellness classes for older adults in the region.",
     "tags": ["seniors", "meals", "transportation", "wellness"]
   },
@@ -45,7 +45,7 @@
     "type": "Event / Program",
     "category": "Youth & Family Programs",
     "city": "Downingtown",
-    "website": "https://ymcagbw.org/locations/brandywine-ymca",
+    "website": "https://ymcagbw.org/ ",
     "description": "Offers fitness classes, swim safety programs, youth sports, after-school activities, and chronic disease management classes for families.",
     "tags": ["youth", "fitness", "family", "wellness"]
   },
@@ -55,7 +55,7 @@
     "type": "Support Service",
     "category": "Public Health",
     "city": "Chester County",
-    "website": "https://www.chesco.org/494/Health-Department",
+    "website": "https://www.chesco.org/5556/Health ",
     "description": "Provides immunizations, maternal and child health programs, WIC nutrition services, and community education on disease prevention and healthy living.",
     "tags": ["health", "public-health", "immunizations"]
   },
@@ -75,7 +75,7 @@
     "type": "Non-Profit",
     "category": "Mental Health",
     "city": "Southeastern PA",
-    "website": "https://namisepa.org/",
+    "website": "https://namimainlinepa.org/ ",
     "description": "Provides peer support groups, education classes, and advocacy for individuals and families affected by mental health conditions throughout the region.",
     "tags": ["mental-health", "support", "families"]
   },
@@ -85,7 +85,7 @@
     "type": "Event / Program",
     "category": "Volunteer Opportunities",
     "city": "Chester County",
-    "website": "https://www.chesco.org/Volunteer",
+    "website": "https://www.chesco.org/2969/Volunteer-Chesco ",
     "description": "Chester County government volunteer hub listing opportunities such as food distributions, park and stream clean-ups, and community events.",
     "tags": ["volunteer", "community", "service"]
   },
@@ -108,16 +108,6 @@
     "website": "https://www.downingtownlibrary.org/",
     "description": "Provides books, digital resources, computer and Wi-Fi access, homework help, and educational programs for children, teens, and adults.",
     "tags": ["library", "internet", "education"]
-  },
-  {
-    "id": "resource-downingtown-youth-initiative",
-    "name": "Downingtown Youth Initiative",
-    "type": "Non-Profit",
-    "category": "Youth Development",
-    "city": "Downingtown",
-    "website": "https://downingtownyouthinitiative.org/",
-    "description": "Provides mentorship, leadership programs, and positive after-school opportunities for middle and high school students in the Downingtown area.",
-    "tags": ["youth", "mentorship", "after-school"]
   },
   {
     "id": "resource-brandywine-river-museum",
@@ -145,19 +135,9 @@
     "type": "Support Service",
     "category": "Food Assistance",
     "city": "Chester County",
-    "website": "https://www.mealsonwheelschesco.org/",
+    "website": "https://mowcc.org/ ",
     "description": "Delivers nutritious meals to homebound seniors to support health, food security, and independent living.",
     "tags": ["seniors", "meal-delivery", "nutrition"]
-  },
-  {
-    "id": "resource-wheeled-meals-chesco",
-    "name": "Wheeled Meals of Chester County",
-    "type": "Support Service",
-    "category": "Food Assistance",
-    "city": "Chester County",
-    "website": "https://www.wheeledmeals.org/",
-    "description": "Provides daily meal delivery and wellness checks to homebound seniors throughout Chester County.",
-    "tags": ["seniors", "meal-delivery", "wellness"]
   },
   {
     "id": "resource-peoples-pantry-west-chester",
@@ -165,7 +145,7 @@
     "type": "Support Service",
     "category": "Food Assistance",
     "city": "West Chester",
-    "website": "https://www.peoplespantrywc.org/",
+    "website": "https://churchroadpantry.org/ ",
     "description": "Community food pantry offering emergency groceries and household essentials to residents experiencing food insecurity.",
     "tags": ["food", "pantry", "emergency"]
   },
@@ -175,7 +155,7 @@
     "type": "Support Service",
     "category": "Mental Health",
     "city": "Chester County",
-    "website": "https://www.chesco.org/463/Crisis-Intervention",
+    "website": "https://www.chesco.org/1640/Emergency ",
     "description": "Offers 24/7 mental health crisis intervention services including mobile crisis response teams.",
     "tags": ["mental-health", "crisis", "hotline"]
   },
@@ -190,22 +170,12 @@
     "tags": ["mental-health", "hotline", "crisis"]
   },
   {
-    "id": "resource-mosaic-counseling-group",
-    "name": "Mosaic Counseling Group",
-    "type": "Support Service",
-    "category": "Mental Health",
-    "city": "Chester County",
-    "website": "https://www.mosaiccounselinggroup.org/",
-    "description": "Provides school-based and adolescent-focused mental health counseling services in Chester County.",
-    "tags": ["mental-health", "youth", "counseling"]
-  },
-  {
     "id": "resource-dvccc",
     "name": "Domestic Violence Center of Chester County",
     "type": "Support Service",
     "category": "Crisis Support",
     "city": "Chester County",
-    "website": "https://dvccc.org/",
+    "website": "https://dvcccpa.org/ ",
     "description": "Provides crisis intervention, counseling, emergency shelter, and legal advocacy for survivors of domestic violence.",
     "tags": ["crisis", "safety", "counseling"]
   },
@@ -215,7 +185,7 @@
     "type": "Support Service",
     "category": "Housing Assistance",
     "city": "Chester County",
-    "website": "https://www.chesco.org/137/Housing-Authority",
+    "website": "https://haccnet.org/ ",
     "description": "Administers public housing and Housing Choice Voucher programs for eligible residents.",
     "tags": ["housing", "rent-assistance", "section-8"]
   },
@@ -225,7 +195,7 @@
     "type": "Support Service",
     "category": "Housing Assistance",
     "city": "Chester County",
-    "website": "https://www.habitatcc.org/",
+    "website": "https://www.hfhcc.org/ ",
     "description": "Builds and repairs affordable homes while supporting long-term housing stability for low-income families.",
     "tags": ["housing", "homeownership", "repairs"]
   },
@@ -235,7 +205,7 @@
     "type": "Support Service",
     "category": "Housing Assistance",
     "city": "West Chester",
-    "website": "https://www.actinfaith.org/",
+    "website": "https://www.assistingnow.org/ ",
     "description": "Provides emergency financial assistance for rent, utilities, and housing stabilization to prevent homelessness.",
     "tags": ["housing", "financial-aid", "emergency"]
   },
@@ -245,7 +215,7 @@
     "type": "Support Service",
     "category": "Housing Assistance",
     "city": "Chester County",
-    "website": "https://www.chesco.org/128/Community-Development",
+    "website": "https://www.chesco.org/204/Community-Development ",
     "description": "Administers housing rehabilitation, down payment assistance, and accessibility improvement programs.",
     "tags": ["housing", "financial-assistance", "repairs"]
   },
@@ -255,7 +225,7 @@
     "type": "Support Service",
     "category": "Housing Assistance",
     "city": "Chester County",
-    "website": "https://www.chesco.org/4875/Emergency-Rental-Assistance",
+    "website": "https://www.pa.gov/agencies/dhs/resources/erap ",
     "description": "Provides short-term financial assistance for rent and utility arrears to eligible households.",
     "tags": ["housing", "rent-assistance", "utilities"]
   },
@@ -265,7 +235,7 @@
     "type": "Community Engagement",
     "category": "Volunteer Opportunities",
     "city": "Chester County",
-    "website": "https://www.unitedwaychesco.org/",
+    "website": "https://www.unitedwaychestercounty.org/ ",
     "description": "Connects volunteers with community initiatives focused on education, health, and financial stability.",
     "tags": ["volunteer", "community-service"]
   },
@@ -275,7 +245,7 @@
     "type": "Community Engagement",
     "category": "Environmental Programs",
     "city": "Chester County",
-    "website": "https://www.chesco.org/121/Parks-Preservation",
+    "website": "https://www.chesco.org/5554/Parks-Preservation ",
     "description": "Manages public parks and offers environmental programs, workshops, and volunteer opportunities.",
     "tags": ["parks", "environment", "recreation"]
   },
@@ -325,7 +295,7 @@
     "type": "Community Engagement",
     "category": "Digital Access",
     "city": "Pennsylvania",
-    "website": "https://www.digitalalliancepa.org/",
+    "website": "https://www.scccc.com/chester-county-digital-alliance.html",
     "description": "Works to expand broadband and digital literacy access through community partnerships and training initiatives.",
     "tags": ["technology", "digital-access", "education"]
   },
@@ -345,7 +315,7 @@
     "type": "Support Service",
     "category": "Senior Services",
     "city": "Chester County",
-    "website": "https://www.chesco.org/162/Aging-Services",
+    "website": "https://www.chesco.org/135/Aging",
     "description": "Coordinates programs and services that support health, independence, and quality of life for older adults.",
     "tags": ["seniors", "health", "support"]
   }
