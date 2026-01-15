@@ -5,13 +5,11 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
   background-color: #f5f5f5;
   color: #222;
   line-height: 1.6;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  font-optical-sizing: auto;
 }
 
 .site-header {
@@ -393,7 +391,6 @@ body {
 .resource-card:hover h3 {
   font-weight: 700;
 }
-
 
 @media (max-width: 720px) {
   .site-header {
