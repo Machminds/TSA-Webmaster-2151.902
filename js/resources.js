@@ -13,6 +13,7 @@ async function loadResources() {
 }
 function renderResources(list) {
   resourceListElement.innerHTML = '';
+    list = [...list].sort((a, b) => a.name.localeCompare(b.name));
 
   if (list.length === 0) {
     resourceCountElement.textContent = 'Showing 0 resources.';
