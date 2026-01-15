@@ -128,21 +128,7 @@
       "service"
     ]
   },
-  {
-    "id": "resource-techgirlz",
-    "name": "TechGirlz Workshops (Chester County Area)",
-    "type": "Youth Program",
-    "category": "STEM & Technology",
-    "city": "Chester Springs",
-    "website": "https://www.techgirlz.org/",
-    "description": "Free technology workshops and hands-on activities that introduce middle school girls to coding, game design, robotics, and other STEM topics.",
-    "tags": [
-      "STEM",
-      "girls",
-      "technology",
-      "workshops"
-    ]
-  },
+  
   {
     "id": "resource-darc",
     "name": "Downingtown Area Recreation Consortium (DARC)",
@@ -624,16 +610,7 @@
   "description": "Provides job search assistance, computer access, and workforce training programs.",
   "tags": ["employment", "technology", "training"]
 },
-{
-  "id": "resource-techgirlz",
-  "name": "TechGirlz",
-  "type": "Community Engagement",
-  "category": "Digital Access",
-  "city": "Chester County",
-  "website": "https://www.techgirlz.org/",
-  "description": "Offers free technology and STEM workshops for middle school-aged girls.",
-  "tags": ["technology", "education", "youth"]
-},
+
 {
   "id": "resource-chesco-digital-alliance",
   "name": "Chester County Digital Alliance",
