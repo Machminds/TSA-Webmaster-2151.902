@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Volunteer - Downingtown Link</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Downingtown Link Logo">
-                <span>Downingtown Link</span>
-            </a>
-            <nav>
-                <a href="resources.html">Resources</a>
-                <a href="events.html">Events</a>
-                <a href="nonprofits.html">Nonprofits</a>
-                <a href="volunteer.html">Volunteer</a>
-                <a href="about.html">About</a>
-            </nav>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img
+          src="assets/logo.png"
+          alt="Downingtown Link Logo"
+          class="logo-img"
+        />
+        <span class="logo-text">Downingtown Link</span>
+      </div>
+      <nav class="main-nav">
+        <div class="dropdown">
+          <button class="dropdown-toggle">Menu</button>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resource Hub</a></li>
+            <li><a href="submit.html">Submit Resource</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
         </div>
+      </nav>
     </header>
 
     <main>
-        <section class="volunteer-list">
-            <div class="container">
-                <h2>Volunteer Opportunities</h2>
-                <div id="volunteerList"></div>
-            </div>
-        </section>
+      <section class="volunteer-list">
+        <div class="container">
+          <h2>Volunteer Opportunities</h2>
+          <div id="volunteerList"></div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Downingtown Link • Connecting Our Community</p>
-        </div>
+      <div class="container">
+        <p>© 2025 Downingtown Link</p>
+      </div>
     </footer>
 
     <script src="js/volunteer.js"></script>
-</body>
+  </body>
 </html>

@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Submit a Resource | Downingtown Link</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/resources.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
 
-<body>
-
-<header class="site-header">
-    <div class="logo">
-        <img src="assets/logo.png" alt="Downingtown Link Logo" class="logo-img">
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img
+          src="assets/logo.png"
+          alt="Downingtown Link Logo"
+          class="logo-img"
+        />
         <span class="logo-text">Downingtown Link</span>
-    </div>
-    <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="resources.html">Resource Hub</a>
-        <a href="submit.html" class="active">Submit Resource</a>
-        <a href="about.html">About</a>
-    </nav>
-</header>
+      </div>
+      <nav class="main-nav">
+        <div class="dropdown">
+          <button class="dropdown-toggle">Menu</button>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resource Hub</a></li>
+            <li><a href="submit.html" class="active">Submit Resource</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<section class="page-hero">
-    <h1>Submit a Community Resource</h1>
-    <p>Help keep our directory up-to-date by sharing information about local services, nonprofits, or programs.</p>
-</section>
+    <section class="page-hero">
+      <h1>Submit a Community Resource</h1>
+      <p>
+        Help keep our directory up-to-date by sharing information about local
+        services, nonprofits, or programs.
+      </p>
+    </section>
 
-<section class="page-section">
+    <section class="page-section">
+      <form id="resourceForm" class="form-card">
+        <div class="form-row">
+          <label for="resourceName"
+            >Resource Name<span class="required">*</span></label
+          >
+          <input type="text" id="resourceName" required />
+        </div>
 
-<form id="resourceForm" class="form-card">
-
-    <div class="form-row">
-        <label for="resourceName">Resource Name<span class="required">*</span></label>
-        <input type="text" id="resourceName" required>
-    </div>
-
-    <div class="form-row">
-        <label for="type">Resource Type<span class="required">*</span></label>
-        <select id="type" required>
+        <div class="form-row">
+          <label for="type">Resource Type<span class="required">*</span></label>
+          <select id="type" required>
             <option value="">Select a type</option>
             <option>Food Assistance</option>
             <option>Mental Health</option>
@@ -48,17 +61,24 @@
             <option>Senior Services</option>
             <option>STEM / Education</option>
             <option>Non-profit Organization</option>
-        </select>
-    </div>
+          </select>
+        </div>
 
-    <div class="form-row">
-        <label for="category">Category<span class="required">*</span></label>
-        <input type="text" id="category" placeholder="Food assistance, housing, mental health, STEM, etc." required>
-    </div>
+        <div class="form-row">
+          <label for="category">Category<span class="required">*</span></label>
+          <input
+            type="text"
+            id="category"
+            placeholder="Food assistance, housing, mental health, STEM, etc."
+            required
+          />
+        </div>
 
-    <div class="form-row">
-        <label for="location">Mailing Address City<span class="required">*</span></label>
-        <select id="location" required>
+        <div class="form-row">
+          <label for="location"
+            >Mailing Address City<span class="required">*</span></label
+          >
+          <select id="location" required>
             <option value="">Select a city</option>
             <option>Downingtown</option>
             <option>Exton</option>
@@ -66,42 +86,59 @@
             <option>Glenmoore</option>
             <option>Romansville</option>
             <option>Chester County</option>
-        </select>
-    </div>
+          </select>
+        </div>
 
-    <div class="form-row">
-        <label for="link">Website or Contact Link<span class="required">*</span></label>
-        <input type="url" id="link" placeholder="https://example.org" required>
-    </div>
+        <div class="form-row">
+          <label for="link"
+            >Website or Contact Link<span class="required">*</span></label
+          >
+          <input
+            type="url"
+            id="link"
+            placeholder="https://example.org"
+            required
+          />
+        </div>
 
-    <div class="form-row">
-        <label for="description">Short Description<span class="required">*</span></label>
-        <textarea id="description" rows="4" placeholder="Explain who this resource serves and what support it provides." required></textarea>
-    </div>
+        <div class="form-row">
+          <label for="description"
+            >Short Description<span class="required">*</span></label
+          >
+          <textarea
+            id="description"
+            rows="4"
+            placeholder="Explain who this resource serves and what support it provides."
+            required
+          ></textarea>
+        </div>
 
-    <div class="form-row">
-        <label for="name">Your Name (Optional)</label>
-        <input type="text" id="name" placeholder="Optional">
-    </div>
+        <div class="form-row">
+          <label for="name">Your Name (Optional)</label>
+          <input type="text" id="name" placeholder="Optional" />
+        </div>
 
-    <div class="form-row">
-        <label for="email">Your Email (Optional)</label>
-        <input type="email" id="email" placeholder="Optional, used only for follow-up questions">
-    </div>
+        <div class="form-row">
+          <label for="email">Your Email (Optional)</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Optional, used only for follow-up questions"
+          />
+        </div>
 
-    <button type="submit" class="btn primary form-submit">Submit Resource</button>
+        <button type="submit" class="btn primary form-submit">
+          Submit Resource
+        </button>
 
-    <p id="formMessage" class="form-message"></p>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
 
-</form>
+    <footer class="site-footer">
+      © 2025 Downingtown Link
+    </footer>
 
-</section>
-
-<footer class="site-footer">
-    © 2025 Downingtown Link – Created for TSA Webmaster
-</footer>
-
-<script src="js/resources.js"></script>
-
-</body>
+    <script src="js/resources.js"></script>
+  </body>
 </html>

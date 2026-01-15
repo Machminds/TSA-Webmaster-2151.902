@@ -1,82 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resource Hub | Downingtown Link</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Only ONE script. This loads your resource data + filter logic. -->
     <script src="js/resources.js" defer></script>
-</head>
 
-<body>
-<header class="site-header">
-    <div class="logo">
-        <img src="assets/logo.png" alt="Downingtown Link Logo" class="logo-img">
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img
+          src="assets/logo.png"
+          alt="Downingtown Link Logo"
+          class="logo-img"
+        />
         <span class="logo-text">Downingtown Link</span>
-    </div>
-    <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="resources.html" class="active">Resource Hub</a>
-        <a href="submit.html">Submit Resource</a>
-        <a href="about.html">About</a>
-    </nav>
-</header>
-
-<main>
-    <section class="page-hero">
+      </div>
+      <nav class="main-nav">
+        <div class="dropdown">
+          <button class="dropdown-toggle">Menu</button>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html" class="active">Resource Hub</a></li>
+            <li><a href="submit.html">Submit Resource</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
         <h1>Community Resource Hub</h1>
         <p>
-            Browse support services, non-profits, community events, and youth programs that serve
-            residents in the Downingtown Area School District and nearby Chester County communities.
-            Use the search and filters to quickly find what you need.
+          Browse support services, non-profits, community events, and youth
+          programs that serve residents in the Downingtown Area School District
+          and nearby Chester County communities. Use the search and filters to
+          quickly find what you need.
         </p>
-    </section>
+      </section>
 
-    <section class="filters-bar">
+      <section class="filters-bar">
         <div class="filter-group">
-            <label for="searchInput">Search</label>
-            <input type="text" id="searchInput" placeholder="Search by name, category, or keyword">
+          <label for="searchInput">Search</label>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name, category, or keyword"
+          />
         </div>
 
         <div class="filter-group">
-            <label for="typeFilter">Type</label>
-            <select id="typeFilter">
-                <option value="all">All Types</option>
-                <option value="Support Service">Support Services</option>
-                <option value="Non-Profit">Non-Profit Organizations</option>
-                <option value="Event / Program">Events & Programs</option>
-                <option value="Youth Program">Youth & Student Programs</option>
-            </select>
+          <label for="typeFilter">Type</label>
+          <select id="typeFilter">
+            <option value="all">All Types</option>
+            <option value="Support Service">Support Services</option>
+            <option value="Non-Profit">Non-Profit Organizations</option>
+            <option value="Event / Program">Events & Programs</option>
+            <option value="Youth Program">Youth & Student Programs</option>
+          </select>
         </div>
 
         <div class="filter-group">
-            <label for="locationFilter">Mailing Address City</label>
-            <select id="locationFilter">
-                <option value="all">All Areas</option>
-                <option value="Downingtown">Downingtown</option>
-                <option value="Exton">Exton</option>
-                <option value="Chester Springs">Chester Springs</option>
-                <option value="Glenmoore">Glenmoore</option>
-                <option value="Romansville">Romansville</option>
-                <option value="Chester County">Chester County (County-wide)</option>
-            </select>
+          <label for="locationFilter">Mailing Address City</label>
+          <select id="locationFilter">
+            <option value="all">All Areas</option>
+            <option value="Downingtown">Downingtown</option>
+            <option value="Exton">Exton</option>
+            <option value="Chester Springs">Chester Springs</option>
+            <option value="Glenmoore">Glenmoore</option>
+            <option value="Romansville">Romansville</option>
+            <option value="Chester County">Chester County (County-wide)</option>
+          </select>
         </div>
-    </section>
+      </section>
 
-    <section class="resources-section">
+      <section class="resources-section">
         <div id="resourceCount" class="resource-count"></div>
         <div id="resourceList" class="card-grid resources-grid"></div>
         <p id="noResultsMessage" class="no-results" hidden>
-            No resources match your search. Try clearing a filter or using a different keyword.
+          No resources match your search. Try clearing a filter or using a
+          different keyword.
         </p>
-    </section>
-</main>
+      </section>
+    </main>
 
-<footer class="site-footer">
-    <p>© 2025 Downingtown Link · Community Resource Hub created by students at Downingtown STEM Academy.</p>
-</footer>
-
-</body>
+    <footer class="site-footer">
+      <p>
+        © 2025 Downingtown Link
+      </p>
+    </footer>
+  </body>
 </html>
