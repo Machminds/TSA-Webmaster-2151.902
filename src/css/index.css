@@ -176,4 +176,5 @@ input {
 .typewrite {
   border-right: 0.08em solid #fff;
   color: green;
+  text-decoration: none;
 }

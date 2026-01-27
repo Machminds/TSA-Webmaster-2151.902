@@ -1,20 +1,15 @@
 const hero = document.querySelector(".hero-title");
 const bottom = document.querySelector(".bottom-section");
 
-const MIN_SCALE = 0;
-const SCALE_DISTANCE = window.innerHeight * 0.9;
+const MIN_SCALE = 0.54;
+const SCALE_DISTANCE = window.innerHeight ;
 
 window.addEventListener("scroll", () => {
+      hero.classList.add("shrunk");
   const rect = bottom.getBoundingClientRect();
-
   let scale = 1 - window.scrollY / SCALE_DISTANCE;
   scale = Math.max(MIN_SCALE, scale);
-
   hero.style.transform = `scale(${scale})`;
-
-  if (rect.top < window.innerHeight * 0.5) {
-    hero.style.transform = `scale(${MIN_SCALE})`;
-  }
 });
 
 const h1flipper = document.getElementById('changer');
