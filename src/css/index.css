@@ -1,0 +1,166 @@
+body {
+  background-color: transparent;
+  overflow-y: auto;
+}
+.carousel {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 100vw;
+  max-height: 25vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.carousel {
+  transition: transform 0.3s ease;
+
+  > * {
+    flex: 0 0 100%;
+  }
+}
+.carousel:hover {
+  box-shadow: rgba(0, 0, 0, 20%) 5px 5px 20px 0;
+  min-height: 120px;
+  transition: all 0.3s ease-in-out;
+}
+.group {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+  will-change: transform;
+  animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bottom-section {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bottom-section h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.bottom-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bottom-section .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.bottom-section .buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.bottom-section .buttons button:hover {
+  background-color: gray;
+  color: white;
+}
+.dropdown {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.hero-title {
+  height: 100vh;            
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  transition:
+    height 0.5s ease,
+    font-size 0.5s ease;
+}
+
+.hero-title {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+  transform-origin: center top;
+}
+
+.hero-title h1 {
+  font-size: 10vw; 
+}
+
+
+.hero-title.shrink {
+  height: 120px;            
+}
+
+.hero-title.shrink h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.hero-title.shrunk {
+  height: 120px;
+  transform: scale(0.45);
+}
