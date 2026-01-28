@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="src/css/index.css" />
     <link rel="stylesheet" href="src/css/main.css" />
     <script src="src/js/index.js" defer></script>
+    <script src="src/js/main.js" defer></script>
+    
   </head>
 
-  <body>
+<body class="enter">
+
     <div class="inner">
       <div class="carousel">
         <div class="group">
@@ -63,7 +66,12 @@
           </div>
         </div>
       </div>
-      <div class="bottom-section">
+
+      <div class="container">
+
+        <div class="parallax">
+          <div class="bottom-section centered">
+  
         <h1 class="title">
             Philly's 
             <a
@@ -82,16 +90,13 @@
         <p>This website serves as a connector to all of these places!</p>
         <p>yap yap yap</p>
         <p>yap yap yap</p>
-        <p>yap yap yap</p>
-        <p>yap yap yap</p>
-        <p>yap yap yap</p>
-        <p>yap yap yap</p>
 
         <div class="buttons">
             <button>Discover</button>
             <button>Add a Connection!</button>
-
-          </div>
+        </div>
+        </div>
+        
        <!--
         <form action="/">
           <label for="fname">First name:</label><br>
@@ -115,28 +120,31 @@
           
 -->
       </div>
+        </div>
+      <div class="jj">
+      </div>
     </div>
+    
     <div class="dropdown">
       <nav>
         <div class="wrapper">
-          <div class="logo"><a href="#">Philly's Connection</a></div>
+          <div class="logo"><a href="#">Philly's Connect</a></div>
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
           <ul class="nav-links">
             <label for="close-btn" class="btn close-btn"
               ><i class="fas fa-times"></i
             ></label>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#" onclick="go('home')">Home</a></li>
+            <li><a href="#" onclick="go('about')">About</a>
             <li>
-              <a href="#" class="desktop-item">Dropdown Menu</a>
+              <a href="#" class="desktop-item">Help Out!</a>
               <input type="checkbox" id="showDrop" />
               <label for="showDrop" class="mobile-item">Dropdown Menu</label>
               <ul class="drop-menu">
-                <li><a href="#">Drop menu 1</a></li>
-                <li><a href="#">Drop menu 2</a></li>
-                <li><a href="#">Drop menu 3</a></li>
-                <li><a href="#">Drop menu 4</a></li>
+                <li><a href="#">Add Resources</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">Donate</a></li>
               </ul>
             </li>
             <li>
@@ -172,13 +180,20 @@
                 </div>
               </div>
             </li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="pages/about/index.html">References</a></li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"
             ><i class="fas fa-bars"></i
           ></label>
         </div>
       </nav>
+     
     </div>
+
+     <div id="transition">
+    <div class="panel top"></div>
+    <div class="panel bottom"></div>
+  </div>
+
   </body>
 </html>

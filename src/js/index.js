@@ -1,12 +1,18 @@
 const hero = document.querySelector(".hero-title");
 const bottom = document.querySelector(".bottom-section");
 
-const MIN_SCALE = 0.54;
+const MIN_SCALE = 0.15;
 const SCALE_DISTANCE = window.innerHeight ;
 
 window.addEventListener("scroll", () => {
-      hero.classList.add("shrunk");
   const rect = bottom.getBoundingClientRect();
+  let scale = 1 - window.scrollY / SCALE_DISTANCE;
+  scale = Math.max(MIN_SCALE, scale);
+  hero.style.transform = `scale(${scale})`;
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+      const rect = bottom.getBoundingClientRect();
   let scale = 1 - window.scrollY / SCALE_DISTANCE;
   scale = Math.max(MIN_SCALE, scale);
   hero.style.transform = `scale(${scale})`;
