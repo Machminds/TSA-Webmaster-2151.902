@@ -3,84 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Philly's Connect</title>
+    <title>About | Philly's Connect</title>
+
     <link rel="stylesheet" href="../../src/css/main.css" />
-    <script src="../../src/js/main.js"></script>
+    <script src="../../src/js/main.js" defer></script>
   </head>
 
   <body class="enter">
     <div id="transition">
-        <div class="panel top"></div>
-        <div class="panel bottom"></div>
+      <div class="panel top"></div>
+      <div class="panel bottom"></div>
     </div>
-  <div id="intro"></div>
 
     <div class="dropdown">
       <nav>
         <div class="wrapper">
-          <div class="logo"><a>Philly's Connect</a></div>
+          <div class="logo"><a href="../../index.html">Philly's Connect</a></div>
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
+
           <ul class="nav-links">
-            <label for="close-btn" class="btn close-btn"
-              ><i class="fas fa-times"></i
-            ></label>
+            <label for="close-btn" class="btn close-btn">
+              <i class="fas fa-times"></i>
+            </label>
+
             <li><a href="../../index.html">Home</a></li>
             <li><a href="index.html">About</a></li>
-            <li>
-              <a href="#" class="desktop-item">Dropdown Menu</a>
-              <input type="checkbox" id="showDrop" />
-              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
-              <ul class="drop-menu">
-                <li><a href="#">Drop menu 1</a></li>
-                <li><a href="#">Drop menu 2</a></li>
-                <li><a href="#">Drop menu 3</a></li>
-                <li><a href="#">Drop menu 4</a></li>
-                <li><a href="#">Drop menu 5</a></li>  
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="desktop-item">Mega Menu</a>
-              <input type="checkbox" id="showMega" />
-              <label for="showMega" class="mobile-item">Mega Menu</label>
-              <div class="mega-box">
-                <div class="content">
-                  <div class="row">
-                    <img
-                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="row">
-                    <header>All cheesecakes are created equal</header>
-                    <ul class="mega-links">
-                      <li><a href="#">I Deny!</a></li>
-                    </ul>
-                  </div>
-                  <div class="row">
-                    <header>Kepepe</header>
-                    <ul class="mega-links">
-                      <li><a href="#">number 1</a></li>
-                    </ul>
-                  </div>
-                  <div class="row">
-                    <header>Services</header>
-                    <ul class="mega-links">
-                      <li><a href="#">numero 1</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="../stories/index.html">Stories</a></li>
+            <li><a href="../timeline/index.html">Timeline</a></li>
+            <li><a href="../help/index.html">Help Out!</a></li>
+            <li><a href="../references/index.html">References</a></li>
           </ul>
-          <label for="menu-btn" class="btn menu-btn"
-            ><i class="fas fa-bars"></i
-          ></label>
+
+          <label for="menu-btn" class="btn menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
         </div>
       </nav>
     </div>
-    <div id="intro"></div>
-            <div id="intro-2"></div>
+
+    <main class="about-page">
+      <section class="about-hero">
+        <h1>About Philly's Connect</h1>
+        <p>
+          Philly's Connect is designed to highlight the people, places, and stories
+          that make Philadelphia such a powerful cultural and historical center.
+        </p>
+        <p>
+          The city is shaped not only by major events and landmarks, but also by
+          its neighborhoods, institutions, traditions, and everyday community life.
+        </p>
+      </section>
+
+      <section class="about-grid">
+        <div class="about-card">
+          <h2>Our Purpose</h2>
+          <p>
+            This website brings together important parts of Philadelphia in one
+            space, making it easier to explore the city’s history, identity, and
+            lasting impact.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h2>Why Philadelphia Matters</h2>
+          <p>
+            Philadelphia has played a major role in shaping American history while
+            continuing to grow through art, education, culture, and strong local
+            communities.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h2>What You Can Discover</h2>
+          <p>
+            Visitors can explore historic landmarks, meaningful stories, community
+            spaces, and important moments that continue to define the city today.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h2>Built to Connect</h2>
+          <p>
+            Philly's Connect is meant to serve as a bridge between the city’s past
+            and present, helping users understand how Philadelphia’s story is still
+            being written.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-highlight">
+        <h2>More Than a Historic City</h2>
+        <p>
+          Philadelphia is more than a collection of famous landmarks. It is a city
+          of communities, creativity, resilience, and shared experiences. From
+          historic sites to neighborhood culture, every part of the city adds to
+          its identity.
+        </p>
+      </section>
+
+      <section class="about-cta">
+        <h2>Explore Philly Further</h2>
+        <p>
+          Continue exploring the stories, places, and events that make Philadelphia
+          one of the most influential and connected cities in the country.
+        </p>
+
+        <div class="buttons">
+          <a href="../stories/index.html"><button>View Stories</button></a>
+          <a href="../timeline/index.html"><button>See Timeline</button></a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
