@@ -5,56 +5,66 @@ body {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 .about-parallax {
   background-image: url("../../assets/index/noice.jpg");
-  height: 100vh;
+  min-height: calc(100vh - 70px);
+  padding: 110px 20px 40px;
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .about-box {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.58);
   color: white;
 
-  padding: 45px 30px;
+  padding: 42px 34px;
   text-align: center;
 
   display: flex;
   flex-direction: column;
   gap: 18px;
 
-  width: min(900px, 90%);
-  border-radius: 12px;
-
+  width: min(980px, 92%);
+  border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0 10px 30px;
-
   backdrop-filter: blur(8px);
 
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
-.about-box h1 {
-  font-size: clamp(2rem, 5vw, 4rem);
-  margin-bottom: 6px;
+.about-box h1,
+.about-box .title {
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  line-height: 1.1;
+  margin: 0 0 8px 0;
+  word-break: break-word;
+}
+
+.typewrite {
+  border-right: 0.08em solid #fff;
+  color: #7ed957;
+  text-decoration: none;
+  white-space: normal;
 }
 
 .about-box p {
   font-size: 1.05rem;
-  line-height: 1.65;
-  max-width: 780px;
+  line-height: 1.7;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -63,7 +73,7 @@ body {
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .about-box .buttons a {
@@ -73,14 +83,11 @@ body {
 .about-box .buttons button {
   padding: 10px 20px;
   font-size: 1rem;
-
   color: black;
   background-color: white;
-
   border: none;
   border-radius: 5px;
   cursor: pointer;
-
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
@@ -96,28 +103,12 @@ body {
 .dropdown {
   position: sticky;
   top: 0;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .nav-links .drop-menu,
 .mega-box {
   z-index: 1001 !important;
-}
-
-@media (max-width: 768px) {
-  .about-box {
-    padding: 30px 20px;
-    width: 94%;
-  }
-
-  .about-box p {
-    font-size: 0.98rem;
-    line-height: 1.55;
-  }
-
-  .about-box h1 {
-    font-size: 2.2rem;
-  }
 }
 
 .resource-list {
@@ -128,7 +119,7 @@ body {
 }
 
 .resource-card {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.42);
   padding: 20px;
   border-radius: 12px;
   text-align: left;
@@ -190,4 +181,29 @@ body {
 
 .resource-form button:hover {
   background: #d9d9d9;
+}
+
+@media (max-width: 768px) {
+  .about-parallax {
+    min-height: auto;
+    padding: 95px 14px 30px;
+    align-items: flex-start;
+    background-attachment: scroll;
+  }
+
+  .about-box {
+    padding: 28px 18px;
+    width: 96%;
+    gap: 14px;
+  }
+
+  .about-box h1,
+  .about-box .title {
+    font-size: 2.2rem;
+  }
+
+  .about-box p {
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
 }
