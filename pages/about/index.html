@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Philly's Connect</title>
+
     <link rel="stylesheet" href="../../src/css/main.css" />
     <link rel="stylesheet" href="../../src/css/about.css" />
+
     <script src="../../src/js/main.js" defer></script>
   </head>
 
@@ -14,7 +16,6 @@
       <div class="panel top"></div>
       <div class="panel bottom"></div>
     </div>
-    
 
     <div class="dropdown">
       <nav>
@@ -30,8 +31,52 @@
 
             <li><a href="../../index.html">Home</a></li>
             <li><a href="index.html">About</a></li>
-            <li><a href="../stories/index.html">Stories</a></li>
-            <li><a href="../help/index.html">Help Out!</a></li>
+
+            <li>
+              <a href="#" class="desktop-item">Help Out!</a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Help Out!</label>
+              <ul class="drop-menu">
+                <li><a href="#">Add Resources</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">Donate</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="desktop-item">Stories</a>
+              <input type="checkbox" id="showMega" />
+              <label for="showMega" class="mobile-item">Stories</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt="Stories preview"
+                    />
+                  </div>
+                  <div class="row">
+                    <header>Historic Landmarks</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Independence Hall</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Community Voices</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Neighborhood Stories</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Culture</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Art and Identity</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
             <li><a href="../references/index.html">References</a></li>
           </ul>
 
@@ -44,21 +89,36 @@
 
     <div class="container">
       <div class="parallax about-parallax">
-        <div class="bottom-section centered about-box">
+        <div class="about-box">
           <h1 class="title">About Philly's Connect</h1>
 
-          <p>Philadelphia is more than a historic city. It is a place shaped by people, neighborhoods, culture, and shared experiences.</p>
-          <p>Philly's Connect was created to bring together the stories, landmarks, and voices that define the city.</p>
-          <p>This site helps users explore how Philadelphia’s past and present are connected through community, identity, and local impact.</p>
-          <p>From important events to meaningful places, every part of Philly adds to the story of the city.</p>
-          <p>Through stories, timelines, and community-focused pages, Philly's Connect makes that story easier to explore.</p>
+          <p>
+            Philadelphia is more than a historic city. It is a place shaped by
+            people, neighborhoods, culture, and shared experiences.
+          </p>
+          <p>
+            Philly's Connect was created to bring together the stories,
+            landmarks, and voices that define the city.
+          </p>
+          <p>
+            This site helps users explore how Philadelphia’s past and present
+            are connected through community, identity, and local impact.
+          </p>
+          <p>
+            From important events to meaningful places, every part of Philly
+            adds to the story of the city.
+          </p>
+          <p>
+            Through stories and community-focused pages, Philly's Connect makes
+            that story easier to explore.
+          </p>
 
           <div class="buttons">
-            <a href="../stories/index.html"><button>View Stories</button></a>
-            <a href="../timeline/index.html"><button>See Timeline</button></a>
+            <a href="#"><button>Explore Stories</button></a>
+            <a href="../../index.html"><button>Back Home</button></a>
           </div>
         </div>
       </div>
     </div>
   </body>
-</html>         
+</html>
