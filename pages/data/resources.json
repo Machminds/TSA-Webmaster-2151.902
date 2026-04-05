@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Philabundance",
+    "type": "donate",
+    "category": "Food Support",
+    "description": "Supports hunger relief efforts across the Philadelphia region.",
+    "website": "https://www.philabundance.org/"
+  },
+  {
+    "name": "Mural Arts Philadelphia",
+    "type": "volunteer",
+    "category": "Arts and Community",
+    "description": "Connects art, neighborhoods, and public projects across the city.",
+    "website": "https://www.muralarts.org/"
+  },
+  {
+    "name": "Philadelphia Parks & Recreation",
+    "type": "volunteer",
+    "category": "Community Service",
+    "description": "Offers ways to support parks, recreation, and neighborhood activities.",
+    "website": "https://www.phila.gov/departments/philadelphia-parks-recreation/"
+  },
+  {
+    "name": "The Food Trust",
+    "type": "donate",
+    "category": "Health and Food Access",
+    "description": "Works to expand access to affordable, nutritious food.",
+    "website": "https://thefoodtrust.org/"
+  }
+]

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Resources | Philly's Connect</title>
+
+    <link rel="stylesheet" href="../../src/css/main.css" />
+    <link rel="stylesheet" href="../../src/css/about.css" />
+
+    <script src="../../src/js/main.js" defer></script>
+    <script src="../../src/js/resources.js" defer></script>
+  </head>
+
+  <body class="enter">
+    <div id="transition">
+      <div class="panel top"></div>
+      <div class="panel bottom"></div>
+    </div>
+
+    <div class="dropdown">
+      <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="../../index.html">Philly's Connect</a></div>
+
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn">
+              <i class="fas fa-times"></i>
+            </label>
+
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../about/index.html">About</a></li>
+
+            <li>
+              <a href="#" class="desktop-item">Help Out!</a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Help Out!</label>
+              <ul class="drop-menu">
+                <li><a href="add-resources.html">Add Resources</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html">Donate</a></li>
+              </ul>
+            </li>
+
+            <li><a href="../stories/index.html">Stories</a></li>
+            <li><a href="../references/index.html">References</a></li>
+          </ul>
+
+          <label for="menu-btn" class="btn menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="parallax about-parallax">
+        <div class="about-box">
+          <h1 class="title">Add a Resource</h1>
+
+          <p>
+            Submit a Philadelphia resource that supports the community through
+            volunteering or donations.
+          </p>
+
+          <form class="resource-form" onsubmit="saveResource(event)">
+            <input type="text" id="name" placeholder="Organization Name" required />
+            <select id="type" required>
+              <option value="volunteer">Volunteer</option>
+              <option value="donate">Donate</option>
+            </select>
+            <input type="text" id="category" placeholder="Category" required />
+            <input type="url" id="website" placeholder="Website URL" required />
+            <textarea id="description" placeholder="Short Description" required></textarea>
+            <button type="submit">Save Resource</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
