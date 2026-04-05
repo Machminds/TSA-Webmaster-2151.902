@@ -3,35 +3,47 @@ body {
   overflow-y: auto;
 }
 
-body,
-html {
+html,
+body {
   height: 100%;
 }
 
 .about-parallax {
   background-image: url("../../assets/index/noice.jpg");
   height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+
+  position: relative;
+  z-index: 1; }
 
 .about-box {
-  background-color: rgba(0, 0, 0, 0.82);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
+
   padding: 45px 30px;
   text-align: center;
+
   display: flex;
   flex-direction: column;
   gap: 18px;
+
   width: min(900px, 90%);
   border-radius: 12px;
+
   box-shadow: rgba(0, 0, 0, 0.35) 0 10px 30px;
-  backdrop-filter: blur(6px);
+
+  backdrop-filter: blur(8px);
+
+  position: relative;
+  z-index: 2; 
 }
 
 .about-box h1 {
@@ -61,11 +73,14 @@ html {
 .about-box .buttons button {
   padding: 10px 20px;
   font-size: 1rem;
+
   color: black;
   background-color: white;
+
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
@@ -76,6 +91,17 @@ html {
   background-color: gray;
   color: white;
   transform: translateY(-2px);
+}
+
+.dropdown {
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+}
+
+.nav-links .drop-menu,
+.mega-box {
+  z-index: 1001 !important;
 }
 
 @media (max-width: 768px) {
