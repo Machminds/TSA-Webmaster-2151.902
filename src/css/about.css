@@ -119,3 +119,75 @@ body {
     font-size: 2.2rem;
   }
 }
+
+.resource-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.resource-card {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.resource-card h2 {
+  margin-bottom: 10px;
+}
+
+.resource-card p {
+  margin-bottom: 8px;
+}
+
+.resource-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background: #222;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.resource-card a:hover {
+  background: #444;
+}
+
+.resource-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: min(600px, 100%);
+  margin: 20px auto 0;
+}
+
+.resource-form input,
+.resource-form select,
+.resource-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.resource-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.resource-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.resource-form button:hover {
+  background: #d9d9d9;
+}
