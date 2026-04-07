@@ -358,12 +358,15 @@ function getAllResources() {
 
 let currentType = "volunteer";
 let currentContainerId = "resource-list";
+let typeCycleInterval = null;
 
 function initPage(type, containerId) {
   currentType = type;
   currentContainerId = containerId;
 
+  applyQueryPrefill();
   renderFilteredResources();
+  startTypeCycle();
 
   const categoryFilter = document.getElementById("categoryFilter");
   const searchFilter = document.getElementById("searchFilter");
@@ -377,18 +380,26 @@ function initPage(type, containerId) {
   }
 }
 
+function applyQueryPrefill() {
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category");
+  const search = params.get("search");
+
+  const categoryEl = document.getElementById("categoryFilter");
+  const searchEl = document.getElementById("searchFilter");
+
+  if (category && categoryEl) categoryEl.value = category;
+  if (search && searchEl) searchEl.value = search;
+}
+
 function renderFilteredResources() {
   const container = document.getElementById(currentContainerId);
   if (!container) return;
 
-  const categoryValue =
-    document.getElementById("categoryFilter")?.value || "all";
-  const searchValue =
-    document.getElementById("searchFilter")?.value.toLowerCase().trim() || "";
+  const categoryValue = document.getElementById("categoryFilter")?.value || "all";
+  const searchValue = document.getElementById("searchFilter")?.value.toLowerCase().trim() || "";
 
-  let filtered = getAllResources().filter(
-    (item) => item.type === currentType
-  );
+  let filtered = getAllResources().filter((item) => item.type === currentType);
 
   if (categoryValue !== "all") {
     filtered = filtered.filter((item) => item.category === categoryValue);
@@ -425,10 +436,6 @@ function renderFilteredResources() {
   });
 }
 
-function loadResources(type, containerId) {
-  initPage(type, containerId);
-}
-
 function saveResource(event) {
   event.preventDefault();
 
@@ -444,11 +451,36 @@ function saveResource(event) {
   }
 
   const newResource = { name, type, category, description, website };
-
   const existing = JSON.parse(localStorage.getItem("userResources") || "[]");
   existing.push(newResource);
   localStorage.setItem("userResources", JSON.stringify(existing));
 
   alert("Resource saved on this device.");
   event.target.reset();
-} 
+}
+
+function startTypeCycle() {
+  const el = document.getElementById("typeCycle");
+  if (!el) return;
+
+  const words = JSON.parse(el.dataset.words || "[]");
+  const speed = parseInt(el.dataset.speed || "3000", 10);
+
+  if (!words.length) return;
+
+  if (typeCycleInterval) {
+    clearInterval(typeCycleInterval);
+  }
+
+  let index = 0;
+  el.textContent = words[0];
+  el.classList.add("type-show");
+
+  typeCycleInterval = setInterval(() => {
+    index = (index + 1) % words.length;
+    el.classList.remove("type-show");
+    void el.offsetWidth;
+    el.textContent = words[index];
+    el.classList.add("type-show");
+  }, speed);
+}
