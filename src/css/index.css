@@ -8,24 +8,24 @@ body {
 }
 
 .carousel {
-  overflow: hidden;
   width: 100%;
-  background: #111;
-  padding: 10px 0;
+  overflow: hidden;
+  background: #0f0f0f;
+  padding: 14px 0;
 }
 
 .carousel .group {
   display: flex;
   gap: 18px;
-  animation: scrollX 28s linear infinite;
   width: max-content;
+  animation: scrollX 28s linear infinite;
 }
 
 .carousel .card {
   flex: 0 0 auto;
-  width: 220px;
-  height: 120px;
-  border-radius: 12px;
+  width: 260px;
+  height: 140px;
+  border-radius: 14px;
   overflow: hidden;
   background: #1a1a1a;
 }
@@ -34,6 +34,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .hero-title {
@@ -55,7 +56,7 @@ body {
 .parallax {
   min-height: calc(100vh - 70px);
   background-image:
-    linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.62)),
+    linear-gradient(rgba(10, 10, 10, 0.42), rgba(10, 10, 10, 0.68)),
     url("../assets/index/noice.jpg");
   background-position: center;
   background-size: cover;
@@ -153,10 +154,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .inner {
-    padding-top: 0;
-  }
-
   .carousel {
     padding: 8px 0;
   }
