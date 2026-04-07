@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ nav {
   top: 0;
   width: 100%;
   background-color: black;
+  z-index: 5000;
 }
 
 nav .wrapper {
@@ -27,19 +29,26 @@ nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: visible;
 }
+
 .wrapper .logo a {
   color: #f2f2f2;
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
 }
+
 .wrapper .nav-links {
   display: inline-flex;
+  overflow: visible;
 }
+
 .nav-links li {
   list-style: none;
+  position: relative;
 }
+
 .nav-links li a {
   color: #f2f2f2;
   text-decoration: none;
@@ -49,22 +58,28 @@ nav .wrapper {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+
 .nav-links li a:hover {
   background: #3a3b3c;
 }
+
 .nav-links .mobile-item {
   display: none;
 }
+
 .nav-links .drop-menu {
   position: absolute;
+  left: 0;
+  top: 85px;
   background: #242526;
   width: 180px;
   line-height: 45px;
-  top: 85px;
   opacity: 0;
   visibility: hidden;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  z-index: 6000;
 }
+
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box {
   transition: all 0.3s ease;
@@ -72,6 +87,7 @@ nav .wrapper {
   opacity: 1;
   visibility: visible;
 }
+
 .drop-menu li a {
   width: 100%;
   display: block;
@@ -79,6 +95,7 @@ nav .wrapper {
   font-weight: 400;
   border-radius: 0px;
 }
+
 .mega-box {
   position: absolute;
   left: 0;
@@ -87,7 +104,9 @@ nav .wrapper {
   top: 85px;
   opacity: 0;
   visibility: hidden;
+  z-index: 6000;
 }
+
 .mega-box .content {
   background: #242526;
   padding: 25px 20px;
@@ -96,27 +115,33 @@ nav .wrapper {
   justify-content: space-between;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+
 .mega-box .content .row {
   width: calc(25% - 30px);
   line-height: 45px;
 }
+
 .content .row img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .content .row header {
   color: #f2f2f2;
   font-size: 20px;
   font-weight: 500;
 }
+
 .content .row .mega-links {
   margin-left: -40px;
   border-left: 1px solid rgba(0, 0, 0, 0.09);
 }
+
 .row .mega-links li {
   padding: 0 20px;
 }
+
 .row .mega-links li a {
   padding: 0px;
   padding: 0 20px;
@@ -124,15 +149,18 @@ nav .wrapper {
   font-size: 17px;
   display: block;
 }
+
 .row .mega-links li a:hover {
   color: #f2f2f2;
 }
+
 .wrapper .btn {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   display: none;
 }
+
 .wrapper .btn.close-btn {
   position: absolute;
   right: 30px;
@@ -143,6 +171,7 @@ nav .wrapper {
   .wrapper .btn {
     display: block;
   }
+
   .wrapper .nav-links {
     position: fixed;
     height: 100vh;
@@ -157,34 +186,43 @@ nav .wrapper {
     overflow-y: auto;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
     transition: all 0.3s ease;
+    z-index: 7000;
   }
 
   ::-webkit-scrollbar {
     width: 10px;
   }
+
   ::-webkit-scrollbar-track {
     background: #242526;
   }
+
   ::-webkit-scrollbar-thumb {
     background: #3a3b3c;
   }
+
   #menu-btn:checked ~ .nav-links {
     left: 0%;
   }
+
   #menu-btn:checked ~ .btn.menu-btn {
     display: none;
   }
+
   #close-btn:checked ~ .btn.menu-btn {
     display: block;
   }
+
   .nav-links li {
     margin: 15px 10px;
   }
+
   .nav-links li a {
     padding: 0 20px;
     display: block;
     font-size: 20px;
   }
+
   .nav-links .drop-menu {
     position: static;
     opacity: 1;
@@ -197,13 +235,16 @@ nav .wrapper {
     box-shadow: none;
     transition: all 0.3s ease;
   }
+
   #showDrop:checked ~ .drop-menu,
   #showMega:checked ~ .mega-box {
     max-height: 100%;
   }
+
   .nav-links .desktop-item {
     display: none;
   }
+
   .nav-links .mobile-item {
     display: block;
     color: #f2f2f2;
@@ -214,16 +255,20 @@ nav .wrapper {
     border-radius: 5px;
     transition: all 0.3s ease;
   }
+
   .nav-links .mobile-item:hover {
     background: #3a3b3c;
   }
+
   .drop-menu li {
     margin: 0;
   }
+
   .drop-menu li a {
     border-radius: 5px;
     font-size: 18px;
   }
+
   .mega-box {
     position: static;
     top: 65px;
@@ -234,31 +279,38 @@ nav .wrapper {
     overflow: hidden;
     transition: all 0.3s ease;
   }
+
   .mega-box .content {
     box-shadow: none;
     flex-direction: column;
     padding: 20px 20px 0 20px;
   }
+
   .mega-box .content .row {
     width: 100%;
     margin-bottom: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
+
   .mega-box .content .row:nth-child(1),
   .mega-box .content .row:nth-child(2) {
     border-top: 0px;
   }
+
   .content .row .mega-links {
     border-left: 0px;
     padding-left: 15px;
   }
+
   .row .mega-links li {
     margin: 0;
   }
+
   .content .row header {
     font-size: 19px;
   }
 }
+
 nav input {
   display: none;
 }
@@ -272,6 +324,7 @@ nav input {
   text-align: center;
   padding: 0 30px;
 }
+
 .body-text div {
   font-size: 45px;
   font-weight: 600;
@@ -301,6 +354,7 @@ nav input {
   bottom: 0;
   transform: translateY(0%);
 }
+
 .panel {
   position: absolute;
   width: 100%;
@@ -312,6 +366,7 @@ nav input {
 body.enter .panel.top {
   animation: topReveal 0.6s ease forwards;
 }
+
 body.enter .panel.bottom {
   animation: bottomReveal 0.6s ease forwards;
 }
@@ -319,11 +374,37 @@ body.enter .panel.bottom {
 body.exit .panel.top {
   animation: topCover 0.6s ease forwards;
 }
+
 body.exit .panel.bottom {
   animation: bottomCover 0.6s ease forwards;
 }
 
-@keyframes topReveal   { to { transform: translateY(-100%); } }
-@keyframes bottomReveal{ to { transform: translateY(100%); } }
-@keyframes topCover    { from { transform: translateY(-100%); } to { transform: translateY(0); } }
-@keyframes bottomCover { from { transform: translateY(100%); }  to { transform: translateY(0); } }
+@keyframes topReveal {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes bottomReveal {
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes topCover {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bottomCover {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
