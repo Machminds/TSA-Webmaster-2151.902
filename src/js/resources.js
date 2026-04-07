@@ -482,14 +482,8 @@ function renderRecentResources() {
   if (recentResources.length === 0) {
     container.innerHTML = `
       <div class="resource-card">
-        <h2>No submissions yet</h2>
-        <p>Judges and users can submit a resource above and it will appear here instantly.</p>
-      </div>
-      <div class="resource-card">
-        <h2>Example Submission</h2>
-        <p><strong>Type:</strong> Volunteer</p>
-        <p><strong>Category:</strong> Community Service</p>
-        <p>This area is designed to preview the newest suggested organizations.</p>
+        <h2>Latest Submitted Resources</h2>
+        <p>Submitted resources will appear here after a user adds one through the form above.</p>
       </div>
     `;
     return;
