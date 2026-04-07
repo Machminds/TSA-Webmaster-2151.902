@@ -16,6 +16,7 @@ body {
 
 .carousel .group {
   display: flex;
+  flex-wrap: nowrap;
   gap: 18px;
   width: max-content;
   animation: scrollX 28s linear infinite;
@@ -23,11 +24,11 @@ body {
 
 .carousel .card {
   flex: 0 0 auto;
-  width: 260px;
-  height: 140px;
-  border-radius: 14px;
+  width: 320px;
+  height: 120px;
+  border-radius: 0;
   overflow: hidden;
-  background: #1a1a1a;
+  background: transparent;
 }
 
 .carousel .card img {
@@ -39,7 +40,7 @@ body {
 
 .hero-title {
   text-align: center;
-  padding: 28px 16px 18px;
+  padding: 26px 16px 18px;
   background: #0f0f0f;
 }
 
@@ -56,7 +57,7 @@ body {
 .parallax {
   min-height: calc(100vh - 70px);
   background-image:
-    linear-gradient(rgba(10, 10, 10, 0.42), rgba(10, 10, 10, 0.68)),
+    linear-gradient(rgba(10, 10, 10, 0.38), rgba(10, 10, 10, 0.62)),
     url("../assets/index/noice.jpg");
   background-position: center;
   background-size: cover;
@@ -65,7 +66,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 60px 20px 50px;
+  padding: 55px 20px 50px;
 }
 
 .bottom-section.centered {
@@ -149,7 +150,7 @@ body {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% - 9px));
   }
 }
 
@@ -159,13 +160,13 @@ body {
   }
 
   .carousel .group {
-    gap: 12px;
+    gap: 10px;
     animation-duration: 22s;
   }
 
   .carousel .card {
-    width: 160px;
-    height: 90px;
+    width: 180px;
+    height: 85px;
   }
 
   .hero-title {
