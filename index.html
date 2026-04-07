@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="src/css/index.css" />
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="stylesheet" href="src/css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <script src="src/js/index.js" defer></script>
     <script src="src/js/main.js" defer></script>
@@ -15,6 +19,80 @@
 
   <body class="enter">
     <div class="inner">
+      <div class="dropdown">
+        <nav>
+          <div class="wrapper">
+            <div class="logo"><a href="index.html">Philly's Connect</a></div>
+
+            <input type="radio" name="slider" id="menu-btn" />
+            <input type="radio" name="slider" id="close-btn" />
+
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn">
+                <i class="fas fa-times"></i>
+              </label>
+
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/about/index.html">About</a></li>
+
+              <li>
+                <a href="#" class="desktop-item">Help Out!</a>
+                <input type="checkbox" id="showDrop" />
+                <label for="showDrop" class="mobile-item">Help Out!</label>
+                <ul class="drop-menu">
+                  <li><a href="pages/help/add-resources.html">Add Resources</a></li>
+                  <li><a href="pages/help/volunteer.html">Volunteer</a></li>
+                  <li><a href="pages/help/donate.html">Donate</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="pages/stories/index.html" class="desktop-item">Stories</a>
+                <input type="checkbox" id="showMega" />
+                <label for="showMega" class="mobile-item">Stories</label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <img src="assets/index/painting.jpg" alt="Stories preview" />
+                    </div>
+
+                    <div class="row">
+                      <header>History</header>
+                      <ul class="mega-links">
+                        <li><a href="pages/stories/index.html">Independence Hall</a></li>
+                        <li><a href="pages/stories/index.html">Reading Terminal Market</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="row">
+                      <header>Community</header>
+                      <ul class="mega-links">
+                        <li><a href="pages/stories/index.html">Neighborhood Communities</a></li>
+                        <li><a href="pages/stories/index.html">Community Spaces</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="row">
+                      <header>Culture and Identity</header>
+                      <ul class="mega-links">
+                        <li><a href="pages/stories/index.html">Mural Arts Philadelphia</a></li>
+                        <li><a href="pages/stories/index.html">Public Transit and City Movement</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li><a href="pages/references/index.html">References</a></li>
+            </ul>
+
+            <label for="menu-btn" class="btn menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+          </div>
+        </nav>
+      </div>
+
       <div class="carousel">
         <div class="group">
           <div class="card">
@@ -118,14 +196,14 @@
               <h3>Project HOME</h3>
               <p class="feature-category">Housing Support</p>
               <p>Works to end homelessness in Philadelphia through outreach, support services, and long-term stability programs.</p>
-              <a href="pages/help/donate.html?search=Project HOME">Explore</a>
+              <a href="pages/help/donate.html?search=Project%20HOME">Explore</a>
             </div>
 
             <div class="home-feature-card">
               <h3>Mural Arts Philadelphia</h3>
               <p class="feature-category">Arts and Community</p>
               <p>Connects neighborhoods, artists, and public spaces through meaningful community-based art projects.</p>
-              <a href="pages/help/volunteer.html?search=Mural Arts">Explore</a>
+              <a href="pages/help/volunteer.html?search=Mural%20Arts">Explore</a>
             </div>
           </div>
         </div>
@@ -135,85 +213,17 @@
         <div class="home-feature-box">
           <h2>Quick Explore</h2>
           <div class="quick-filter-grid">
-            <a href="pages/help/volunteer.html?category=Food Support">Food Support</a>
-            <a href="pages/help/volunteer.html?category=Health Support">Health Support</a>
-            <a href="pages/help/volunteer.html?category=Housing Support">Housing Support</a>
+            <a href="pages/help/volunteer.html?category=Food%20Support">Food Support</a>
+            <a href="pages/help/volunteer.html?category=Health%20Support">Health Support</a>
+            <a href="pages/help/volunteer.html?category=Housing%20Support">Housing Support</a>
             <a href="pages/help/volunteer.html?category=Education">Education</a>
-            <a href="pages/help/volunteer.html?category=Community Service">Community Service</a>
+            <a href="pages/help/volunteer.html?category=Community%20Service">Community Service</a>
             <a href="pages/help/volunteer.html?category=Environment">Environment</a>
           </div>
         </div>
       </section>
 
       <div class="jj"></div>
-    </div>
-
-    <div class="dropdown">
-      <nav>
-        <div class="wrapper">
-          <div class="logo"><a href="index.html">Philly's Connect</a></div>
-
-          <input type="radio" name="slider" id="menu-btn" />
-          <input type="radio" name="slider" id="close-btn" />
-
-          <ul class="nav-links">
-            <label for="close-btn" class="btn close-btn">
-              <i class="fas fa-times"></i>
-            </label>
-
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about/index.html">About</a></li>
-
-            <li>
-              <a href="#" class="desktop-item">Help Out!</a>
-              <input type="checkbox" id="showDrop" />
-              <label for="showDrop" class="mobile-item">Help Out!</label>
-              <ul class="drop-menu">
-                <li><a href="pages/help/add-resources.html">Add Resources</a></li>
-                <li><a href="pages/help/volunteer.html">Volunteer</a></li>
-                <li><a href="pages/help/donate.html">Donate</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="pages/stories/index.html" class="desktop-item">Stories</a>
-              <input type="checkbox" id="showMega" />
-              <label for="showMega" class="mobile-item">Stories</label>
-              <div class="mega-box">
-                <div class="content">
-                  <div class="row">
-                    <img src="assets/index/painting.jpg" alt="Stories preview" />
-                  </div>
-                  <div class="row">
-                    <header>Historic Landmarks</header>
-                    <ul class="mega-links">
-                      <li><a href="pages/stories/index.html">Independence Hall</a></li>
-                    </ul>
-                  </div>
-                  <div class="row">
-                    <header>Community Voices</header>
-                    <ul class="mega-links">
-                      <li><a href="pages/stories/index.html">Neighborhood Stories</a></li>
-                    </ul>
-                  </div>
-                  <div class="row">
-                    <header>Arts and Culture</header>
-                    <ul class="mega-links">
-                      <li><a href="pages/stories/index.html">Art and Identity</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li><a href="pages/references/index.html">References</a></li>
-          </ul>
-
-          <label for="menu-btn" class="btn menu-btn">
-            <i class="fas fa-bars"></i>
-          </label>
-        </div>
-      </nav>
     </div>
 
     <div id="transition">
