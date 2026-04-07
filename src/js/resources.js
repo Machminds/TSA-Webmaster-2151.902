@@ -452,11 +452,45 @@ function saveResource(event) {
 
   const newResource = { name, type, category, description, website };
   const existing = JSON.parse(localStorage.getItem("userResources") || "[]");
-  existing.push(newResource);
+  existing.unshift(newResource);
   localStorage.setItem("userResources", JSON.stringify(existing));
 
-  alert("Resource saved on this device.");
+  const message = document.getElementById("save-message");
+  if (message) {
+    message.textContent = "Resource saved successfully on this device.";
+  }
+
   event.target.reset();
+  renderRecentResources();
+}
+
+function renderRecentResources() {
+  const container = document.getElementById("recent-resource-list");
+  if (!container) return;
+
+  const recentResources = JSON.parse(localStorage.getItem("userResources") || "[]").slice(0, 5);
+
+  container.innerHTML = "";
+
+  if (recentResources.length === 0) {
+    container.innerHTML = "<p>No community-submitted resources yet.</p>";
+    return;
+  }
+
+  recentResources.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "resource-card";
+
+    card.innerHTML = `
+      <h2>${item.name}</h2>
+      <p><strong>Type:</strong> ${item.type}</p>
+      <p><strong>Category:</strong> ${item.category}</p>
+      <p>${item.description}</p>
+      <a href="${item.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
+    `;
+
+    container.appendChild(card);
+  });
 }
 
 function startTypeCycle() {

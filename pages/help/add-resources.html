@@ -12,7 +12,7 @@
     <script src="../../src/js/resources.js" defer></script>
   </head>
 
-  <body class="enter">
+  <body class="enter" onload="renderRecentResources()">
     <div id="transition">
       <div class="panel top"></div>
       <div class="panel bottom"></div>
@@ -46,7 +46,7 @@
             </li>
 
             <li><a href="../stories/index.html">Stories</a></li>
-            <li><a href="../references/index.html">References</a></li>
+            <li><a href="../../assets/references/Phillys-Connect-References.pdf" target="_blank">References</a></li>
           </ul>
 
           <label for="menu-btn" class="btn menu-btn">
@@ -67,16 +67,26 @@
           </p>
 
           <form class="resource-form" onsubmit="saveResource(event)">
-            <input type="text" id="name" placeholder="Organization Name" required />
+            <input id="name" type="text" placeholder="Organization Name" required />
             <select id="type" required>
               <option value="volunteer">Volunteer</option>
               <option value="donate">Donate</option>
             </select>
-            <input type="text" id="category" placeholder="Category" required />
-            <input type="url" id="website" placeholder="Website URL" required />
+            <input id="category" type="text" placeholder="Category" required />
+            <input id="website" type="url" placeholder="Website URL" required />
             <textarea id="description" placeholder="Short Description" required></textarea>
             <button type="submit">Save Resource</button>
           </form>
+
+          <p id="save-message" class="save-message"></p>
+
+          <div class="recent-section">
+            <h2>Recently Added Resources</h2>
+            <p class="recent-subtext">
+              These are the most recent community submissions saved on this device.
+            </p>
+            <div id="recent-resource-list" class="resource-list"></div>
+          </div>
         </div>
       </div>
     </div>

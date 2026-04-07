@@ -247,6 +247,110 @@ body {
   text-decoration: none;
 }
 
+.home-feature-section {
+  padding: 40px 20px 10px;
+  background: black;
+}
+
+.home-feature-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.home-feature-box h2 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.home-feature-subtext,
+.recent-subtext {
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 850px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+}
+
+.home-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.home-feature-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.24);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+.home-feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.feature-category {
+  color: #c6ff72;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.home-feature-card p {
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.home-feature-card a,
+.quick-filter-grid a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.home-feature-card a:hover,
+.quick-filter-grid a:hover {
+  transform: translateY(-2px);
+  background: #dddddd;
+}
+
+.home-quick-section {
+  padding-top: 22px;
+  padding-bottom: 55px;
+}
+
+.quick-filter-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.recent-section {
+  margin-top: 28px;
+}
+
+.save-message {
+  color: #c6ff72;
+  font-weight: 600;
+  min-height: 24px;
+  margin-top: 12px;
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -275,6 +379,12 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .home-feature-grid {
+    grid-template-columns: 1fr;
   }
 }
 
