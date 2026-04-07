@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Philly's Connect</title>
+
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <script src="src/js/index.js" defer></script>
+    <script src="src/js/main.js" defer></script>
+  </head>
+
+  <body class="enter">
+    <div class="dropdown">
+      <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="index.html">Philly's Connect</a></div>
+
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn">
+              <i class="fas fa-times"></i>
+            </label>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about/index.html">About</a></li>
+
+            <li>
+              <a href="#" class="desktop-item">Help Out!</a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Help Out!</label>
+              <ul class="drop-menu">
+                <li><a href="pages/help/add-resources.html">Add Resources</a></li>
+                <li><a href="pages/help/volunteer.html">Volunteer</a></li>
+                <li><a href="pages/help/donate.html">Donate</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="pages/stories/index.html" class="desktop-item">Stories</a>
+              <input type="checkbox" id="showMega" />
+              <label for="showMega" class="mobile-item">Stories</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="assets/index/painting.jpg" alt="Stories preview" />
+                  </div>
+
+                  <div class="row">
+                    <header>History</header>
+                    <ul class="mega-links">
+                      <li><a href="pages/stories/index.html">Independence Hall</a></li>
+                      <li><a href="pages/stories/index.html">Reading Terminal Market</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="row">
+                    <header>Community</header>
+                    <ul class="mega-links">
+                      <li><a href="pages/stories/index.html">Neighborhood Communities</a></li>
+                      <li><a href="pages/stories/index.html">Community Spaces</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="row">
+                    <header>Culture and Identity</header>
+                    <ul class="mega-links">
+                      <li><a href="pages/stories/index.html">Mural Arts Philadelphia</a></li>
+                      <li><a href="pages/stories/index.html">Public Transit and City Movement</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li><a href="pages/references/index.html">References</a></li>
+          </ul>
+
+          <label for="menu-btn" class="btn menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      </nav>
+    </div>
+
+    <div class="inner">
+
+      <div class="carousel">
+        <div class="group">
+          <div class="card"><img src="assets/index/busstreet.jpg" /></div>
+          <div class="card"><img src="assets/index/metting_audience.jpg" /></div>
+          <div class="card"><img src="assets/index/painting.jpg" /></div>
+          <div class="card"><img src="assets/index/busstreet.jpg" /></div>
+          <div class="card"><img src="assets/index/metting_audience.jpg" /></div>
+          <div class="card"><img src="assets/index/painting.jpg" /></div>
+        </div>
+
+        <div class="group">
+          <div class="card"><img src="assets/index/busstreet.jpg" /></div>
+          <div class="card"><img src="assets/index/metting_audience.jpg" /></div>
+          <div class="card"><img src="assets/index/painting.jpg" /></div>
+          <div class="card"><img src="assets/index/busstreet.jpg" /></div>
+          <div class="card"><img src="assets/index/metting_audience.jpg" /></div>
+          <div class="card"><img src="assets/index/painting.jpg" /></div>
+        </div>
+      </div>
+
+      <div class="hero-title">
+        <h1>Philly's Connect</h1>
+      </div>
+
+      <div class="container">
+        <div class="parallax">
+          <div class="bottom-section centered">
+            <h1 class="title">
+              Philly's
+              <a
+                href="#"
+                class="typewrite"
+                data-period="2000"
+                data-type='["Connectors","Historians","Artists","Communities","Voices","People"]'>
+                <span class="wrap"></span>
+              </a>
+            </h1>
+
+            <p>Philadelphia is a vibrant cultural and historical center.</p>
+            <p>Connect with people, institutions, and events across the city.</p>
+
+            <div class="buttons">
+              <button onclick="location.href='pages/stories/index.html'">Discover</button>
+              <button onclick="location.href='pages/help/add-resources.html'">Add a Connection!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="home-feature-section">
+        <div class="home-feature-box">
+          <h2>Featured Resources</h2>
+
+          <div class="home-feature-grid">
+            <div class="home-feature-card">
+              <h3>Philabundance</h3>
+              <p class="feature-category">Food Support</p>
+              <p>Supports hunger relief efforts across Philadelphia.</p>
+              <a href="pages/help/donate.html">Explore</a>
+            </div>
+
+            <div class="home-feature-card">
+              <h3>Project HOME</h3>
+              <p class="feature-category">Housing Support</p>
+              <p>Works to end homelessness in Philadelphia.</p>
+              <a href="pages/help/donate.html">Explore</a>
+            </div>
+
+            <div class="home-feature-card">
+              <h3>Mural Arts</h3>
+              <p class="feature-category">Community</p>
+              <p>Connects neighborhoods through art.</p>
+              <a href="pages/help/volunteer.html">Explore</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-feature-section home-quick-section">
+        <div class="home-feature-box">
+          <h2>Quick Explore</h2>
+
+          <div class="quick-filter-grid">
+            <a href="pages/help/volunteer.html">Food</a>
+            <a href="pages/help/volunteer.html">Health</a>
+            <a href="pages/help/volunteer.html">Housing</a>
+            <a href="pages/help/volunteer.html">Education</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="carousel">
+        <div class="group">
+          <div class="card"><img src="assets/index/painting.jpg" /></div>
+          <div class="card"><img src="assets/index/busstreet.jpg" /></div>
+          <div class="card"><img src="assets/index/metting_audience.jpg" /></div>
+          <div class="card"><img src="assets/index/painting.jpg" /></div>
+          <div class="card"><img src="assets/index/busstreet.jpg" /></div>
+          <div class="card"><img src="assets/index/metting_audience.jpg" /></div>
+        </div>
+
+        <div class="group">
+          <div class="card"><img src="assets/index/painting.jpg" /></div>
+          <div class="card"><img src="assets/index/busstreet.jpg" /></div>
+          <div class="card"><img src="assets/index/metting_audience.jpg" /></div>
+          <div class="card"><img src="assets/index/painting.jpg" /></div>
+          <div class="card"><img src="assets/index/busstreet.jpg" /></div>
+          <div class="card"><img src="assets/index/metting_audience.jpg" /></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="transition">
+      <div class="panel top"></div>
+      <div class="panel bottom"></div>
+    </div>
+
+  </body>
+</html>
