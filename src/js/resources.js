@@ -388,16 +388,23 @@ function applyQueryPrefill() {
   const categoryEl = document.getElementById("categoryFilter");
   const searchEl = document.getElementById("searchFilter");
 
-  if (category && categoryEl) categoryEl.value = category;
-  if (search && searchEl) searchEl.value = search;
+  if (category && categoryEl) {
+    categoryEl.value = category;
+  }
+
+  if (search && searchEl) {
+    searchEl.value = search;
+  }
 }
 
 function renderFilteredResources() {
   const container = document.getElementById(currentContainerId);
   if (!container) return;
 
-  const categoryValue = document.getElementById("categoryFilter")?.value || "all";
-  const searchValue = document.getElementById("searchFilter")?.value.toLowerCase().trim() || "";
+  const categoryValue =
+    document.getElementById("categoryFilter")?.value || "all";
+  const searchValue =
+    document.getElementById("searchFilter")?.value.toLowerCase().trim() || "";
 
   let filtered = getAllResources().filter((item) => item.type === currentType);
 
@@ -468,12 +475,23 @@ function renderRecentResources() {
   const container = document.getElementById("recent-resource-list");
   if (!container) return;
 
-  const recentResources = JSON.parse(localStorage.getItem("userResources") || "[]").slice(0, 5);
+  const recentResources = JSON.parse(localStorage.getItem("userResources") || "[]").slice(0, 3);
 
   container.innerHTML = "";
 
   if (recentResources.length === 0) {
-    container.innerHTML = "<p>No community-submitted resources yet.</p>";
+    container.innerHTML = `
+      <div class="resource-card">
+        <h2>No submissions yet</h2>
+        <p>Judges and users can submit a resource above and it will appear here instantly.</p>
+      </div>
+      <div class="resource-card">
+        <h2>Example Submission</h2>
+        <p><strong>Type:</strong> Volunteer</p>
+        <p><strong>Category:</strong> Community Service</p>
+        <p>This area is designed to preview the newest suggested organizations.</p>
+      </div>
+    `;
     return;
   }
 
