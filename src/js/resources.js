@@ -69,7 +69,6 @@ const starterResources = [
     description: "Provides meals and shelter.",
     website: "https://sundaybreakfast.org/"
   },
-
   {
     name: "Habitat for Humanity Philadelphia",
     type: "volunteer",
@@ -140,7 +139,6 @@ const starterResources = [
     description: "Leadership programs for girls.",
     website: "https://www.gsep.org/"
   },
-
   {
     name: "Philadelphia Education Fund",
     type: "donate",
@@ -211,7 +209,6 @@ const starterResources = [
     description: "Environmental education.",
     website: "https://schuylkillcenter.org/"
   },
-
   {
     name: "TreePhilly",
     type: "volunteer",
@@ -282,7 +279,6 @@ const starterResources = [
     description: "Supports nonprofits.",
     website: "https://uac.org/"
   },
-
   {
     name: "People's Emergency Center",
     type: "donate",
@@ -360,17 +356,57 @@ function getAllResources() {
   return [...starterResources, ...localResources];
 }
 
-function loadResources(type, containerId) {
-  const container = document.getElementById(containerId);
+let currentType = "volunteer";
+let currentContainerId = "resource-list";
+
+function initPage(type, containerId) {
+  currentType = type;
+  currentContainerId = containerId;
+
+  renderFilteredResources();
+
+  const categoryFilter = document.getElementById("categoryFilter");
+  const searchFilter = document.getElementById("searchFilter");
+
+  if (categoryFilter) {
+    categoryFilter.addEventListener("change", renderFilteredResources);
+  }
+
+  if (searchFilter) {
+    searchFilter.addEventListener("input", renderFilteredResources);
+  }
+}
+
+function renderFilteredResources() {
+  const container = document.getElementById(currentContainerId);
   if (!container) return;
 
-  const resources = getAllResources();
-  const filtered = resources.filter((item) => item.type === type);
+  const categoryValue =
+    document.getElementById("categoryFilter")?.value || "all";
+  const searchValue =
+    document.getElementById("searchFilter")?.value.toLowerCase().trim() || "";
+
+  let filtered = getAllResources().filter(
+    (item) => item.type === currentType
+  );
+
+  if (categoryValue !== "all") {
+    filtered = filtered.filter((item) => item.category === categoryValue);
+  }
+
+  if (searchValue) {
+    filtered = filtered.filter(
+      (item) =>
+        item.name.toLowerCase().includes(searchValue) ||
+        item.category.toLowerCase().includes(searchValue) ||
+        item.description.toLowerCase().includes(searchValue)
+    );
+  }
 
   container.innerHTML = "";
 
   if (filtered.length === 0) {
-    container.innerHTML = "<p>No resources found yet.</p>";
+    container.innerHTML = "<p>No resources found.</p>";
     return;
   }
 
@@ -389,14 +425,23 @@ function loadResources(type, containerId) {
   });
 }
 
+function loadResources(type, containerId) {
+  initPage(type, containerId);
+}
+
 function saveResource(event) {
   event.preventDefault();
 
-  const name = document.getElementById("name").value.trim();
-  const type = document.getElementById("type").value;
-  const category = document.getElementById("category").value.trim();
-  const description = document.getElementById("description").value.trim();
-  const website = document.getElementById("website").value.trim();
+  const name = document.getElementById("name")?.value.trim();
+  const type = document.getElementById("type")?.value;
+  const category = document.getElementById("category")?.value.trim();
+  const description = document.getElementById("description")?.value.trim();
+  const website = document.getElementById("website")?.value.trim();
+
+  if (!name || !type || !category || !description || !website) {
+    alert("Please fill out all fields.");
+    return;
+  }
 
   const newResource = { name, type, category, description, website };
 
@@ -406,4 +451,4 @@ function saveResource(event) {
 
   alert("Resource saved on this device.");
   event.target.reset();
-}
+} 

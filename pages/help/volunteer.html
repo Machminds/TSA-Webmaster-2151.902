@@ -12,7 +12,7 @@
     <script src="../../src/js/resources.js" defer></script>
   </head>
 
-  <body class="enter" onload="loadResources('volunteer', 'resource-list')">
+  <body class="enter" onload="initPage('volunteer', 'resource-list')">
     <div id="transition">
       <div class="panel top"></div>
       <div class="panel bottom"></div>
@@ -46,7 +46,7 @@
             </li>
 
             <li><a href="../stories/index.html">Stories</a></li>
-            <li><a href="../references/index.html">References</a></li>
+            <li><a href="../../assets/references/Phillys-Connect-References.pdf" target="_blank">References</a></li>
           </ul>
 
           <label for="menu-btn" class="btn menu-btn">
@@ -65,6 +65,31 @@
             Explore organizations and programs where people can volunteer and
             support Philadelphia communities.
           </p>
+
+          <div class="filters">
+            <select id="categoryFilter">
+              <option value="all">All Categories</option>
+              <option value="Animal Welfare">Animal Welfare</option>
+              <option value="Arts and Community">Arts and Community</option>
+              <option value="Children and Families">Children and Families</option>
+              <option value="Community Service">Community Service</option>
+              <option value="Education">Education</option>
+              <option value="Emergency Relief">Emergency Relief</option>
+              <option value="Environment">Environment</option>
+              <option value="Food Support">Food Support</option>
+              <option value="Health Support">Health Support</option>
+              <option value="Housing Support">Housing Support</option>
+              <option value="Immigrant Support">Immigrant Support</option>
+              <option value="Youth Development">Youth Development</option>
+              <option value="Workforce">Workforce</option>
+            </select>
+
+            <input
+              id="searchFilter"
+              type="text"
+              placeholder="Search organizations..."
+            />
+          </div>
 
           <div id="resource-list" class="resource-list"></div>
         </div>

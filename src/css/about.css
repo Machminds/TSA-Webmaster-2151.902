@@ -12,16 +12,13 @@ body {
   background-image: url("../../assets/index/noice.jpg");
   min-height: calc(100vh - 70px);
   padding: 110px 20px 40px;
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
   position: relative;
   z-index: 1;
 }
@@ -29,19 +26,15 @@ body {
 .about-box {
   background-color: rgba(0, 0, 0, 0.58);
   color: white;
-
   padding: 42px 34px;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   gap: 18px;
-
   width: min(980px, 92%);
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0 10px 30px;
   backdrop-filter: blur(8px);
-
   position: relative;
   z-index: 2;
 }
@@ -183,6 +176,27 @@ body {
   background: #d9d9d9;
 }
 
+.filters {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.filters select,
+.filters input {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-width: 220px;
+}
+
+.filters input {
+  min-width: 260px;
+}
+
 @media (max-width: 768px) {
   .about-parallax {
     min-height: auto;
@@ -205,5 +219,16 @@ body {
   .about-box p {
     font-size: 0.98rem;
     line-height: 1.55;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters select,
+  .filters input {
+    width: 100%;
+    min-width: 0;
   }
 }
