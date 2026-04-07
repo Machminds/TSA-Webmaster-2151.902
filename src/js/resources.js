@@ -351,9 +351,12 @@ const starterResources = [
   }
 ];
 
+function getUserResources() {
+  return JSON.parse(localStorage.getItem("userResources") || "[]");
+}
+
 function getAllResources() {
-  const localResources = JSON.parse(localStorage.getItem("userResources") || "[]");
-  return [...starterResources, ...localResources];
+  return [...starterResources, ...getUserResources()];
 }
 
 let currentType = "volunteer";
@@ -458,7 +461,7 @@ function saveResource(event) {
   }
 
   const newResource = { name, type, category, description, website };
-  const existing = JSON.parse(localStorage.getItem("userResources") || "[]");
+  const existing = getUserResources();
   existing.unshift(newResource);
   localStorage.setItem("userResources", JSON.stringify(existing));
 
@@ -475,19 +478,15 @@ function renderRecentResources() {
   const container = document.getElementById("recent-resource-list");
   if (!container) return;
 
-  const recentResources = JSON.parse(localStorage.getItem("userResources") || "[]").slice(0, 3);
+  const userResources = getUserResources();
+  const fallbackResources = starterResources.slice(0, 3);
+
+  const recentResources =
+    userResources.length > 0
+      ? [...userResources.slice(0, 3)]
+      : [...fallbackResources];
 
   container.innerHTML = "";
-
-  if (recentResources.length === 0) {
-    container.innerHTML = `
-      <div class="resource-card">
-        <h2>Latest Submitted Resources</h2>
-        <p>Submitted resources will appear here after a user adds one through the form above.</p>
-      </div>
-    `;
-    return;
-  }
 
   recentResources.forEach((item) => {
     const card = document.createElement("div");
