@@ -12,6 +12,9 @@ body {
   overflow: hidden;
   background: #0f0f0f;
   padding: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .carousel .group {
@@ -157,6 +160,7 @@ body {
 @media (max-width: 768px) {
   .carousel {
     padding: 8px 0;
+    gap: 10px;
   }
 
   .carousel .group {
