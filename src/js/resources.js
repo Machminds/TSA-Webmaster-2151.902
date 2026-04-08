@@ -13,6 +13,7 @@ const starterResources = [
     description: "Connects art, neighborhoods, and public projects across the city.",
     website: "https://www.muralarts.org/"
   },
+  
   {
     name: "Philadelphia Parks & Recreation",
     type: "volunteer",
@@ -348,6 +349,132 @@ const starterResources = [
     category: "Arts and Community",
     description: "Supports art access.",
     website: "https://philamuseum.org/"
+  },
+  {
+    name: "Philly Food Rescue",
+    type: "volunteer",
+    category: "Food Support",
+    description: "Redistributes surplus food to communities in need.",
+    website: "https://www.phillyfoodrescue.com/"
+  },
+  {
+    name: "Sunday Love Project",
+    type: "volunteer",
+    category: "Food Support",
+    description: "Provides meals and essentials to underserved communities.",
+    website: "https://www.sundaylove.org/"
+  },
+  {
+    name: "Habitat for Humanity International",
+    type: "donate",
+    category: "Housing Support",
+    description: "Global housing support with strong local impact.",
+    website: "https://www.habitat.org/"
+  },
+  {
+    name: "Turning Points for Children",
+    type: "donate",
+    category: "Housing Support",
+    description: "Supports families facing housing instability.",
+    website: "https://turningpointsforchildren.org/"
+  },
+  {
+    name: "Einstein Healthcare Network Community Programs",
+    type: "volunteer",
+    category: "Health Support",
+    description: "Community outreach and health services.",
+    website: "https://www.einstein.edu/"
+  },
+  {
+    name: "Jefferson Health Outreach",
+    type: "volunteer",
+    category: "Health Support",
+    description: "Healthcare support and community programs.",
+    website: "https://www.jeffersonhealth.org/"
+  },
+  {
+    name: "Philadelphia Futures",
+    type: "volunteer",
+    category: "Education",
+    description: "Supports students with college readiness and access.",
+    website: "https://www.philadelphiafutures.org/"
+  },
+  {
+    name: "YouthBuild Philadelphia Charter School",
+    type: "donate",
+    category: "Education",
+    description: "Education and job training for young adults.",
+    website: "https://www.youthbuildphilly.org/"
+  },
+  {
+    name: "Delaware Riverkeeper Network",
+    type: "donate",
+    category: "Environment",
+    description: "Protects the Delaware River and surrounding ecosystems.",
+    website: "https://delawareriverkeeper.org/"
+  },
+  {
+    name: "Philadelphia Water Department Programs",
+    type: "volunteer",
+    category: "Environment",
+    description: "Sustainability and water protection initiatives.",
+    website: "https://www.phila.gov/departments/water-department/"
+  },
+  {
+    name: "Philadelphia Volunteers",
+    type: "volunteer",
+    category: "Community Service",
+    description: "Connects volunteers with citywide service opportunities.",
+    website: "https://www.philadelphiavolunteers.org/"
+  },
+  {
+    name: "Serve Philadelphia",
+    type: "volunteer",
+    category: "Community Service",
+    description: "City-led volunteer engagement platform.",
+    website: "https://www.phila.gov/programs/serve-philadelphia/"
+  },
+  {
+    name: "Philadelphia Youth Network",
+    type: "donate",
+    category: "Youth Development",
+    description: "Workforce and development programs for youth.",
+    website: "https://www.pyninc.org/"
+  },
+  {
+    name: "After School Activities Partnerships",
+    type: "donate",
+    category: "Youth Development",
+    description: "After-school enrichment for students.",
+    website: "https://www.asapconnected.com/"
+  },
+  {
+    name: "Morris Animal Refuge",
+    type: "volunteer",
+    category: "Animal Welfare",
+    description: "Animal rescue and adoption services.",
+    website: "https://www.morrisanimalrefuge.org/"
+  },
+  {
+    name: "New Sanctuary Movement",
+    type: "volunteer",
+    category: "Immigrant Support",
+    description: "Supports immigrant communities through advocacy.",
+    website: "https://www.sanctuaryphiladelphia.org/"
+  },
+  {
+    name: "Philadelphia Works",
+    type: "donate",
+    category: "Workforce",
+    description: "Workforce development and job access programs.",
+    website: "https://www.philaworks.org/"
+  },
+  {
+    name: "Covenant House Pennsylvania",
+    type: "donate",
+    category: "Crisis Support",
+    description: "Supports youth experiencing homelessness.",
+    website: "https://covenanthousepa.org/"
   }
 ];
 
